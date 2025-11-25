@@ -1,0 +1,36 @@
+📄 Extracted from page: Mon Toit - Plateforme de Location Immobilière en Côte d'Ivoire
+URL: https://somet1010-montoit-st-dzj4.bolt.host/contact
+
+Extracted content:
+```json
+{
+    "title": "Mon Toit - Plateforme de Location Immobilière en Côte d'Ivoire",
+    "url": "https://somet1010-montoit-st-dzj4.bolt.host/contact",
+    "summary": "La page de contact de Mon Toit, accessible via l'URL fournie, affiche une erreur '404 Page non trouvée', ce qui signifie que la page dédiée aux informations de contact n'est pas disponible. Cependant, le pied de page de cette page contient des informations de contact générales pour l'entreprise, notamment un numéro de téléphone générique, une adresse e-mail et la localisation géographique. Aucune forme de contact directe ni d'heures d'ouverture spécifiques ne sont détaillées sur cette page d'erreur.",
+    "key_points": [
+        "La page de contact spécifique ('/contact') retourne une erreur 404 'Page non trouvée', indiquant son indisponibilité.",
+        "Malgré l'erreur, le pied de page inclut un numéro de téléphone de contact: +225 XX XX XX XX XX (les 'XX' suggèrent un numéro générique ou masqué).",
+        "Une adresse e-mail de contact est fournie: contact@montoit.ci.",
+        "La localisation géographique de l'entreprise est mentionnée comme 'Abidjan, Côte d'Ivoire'.",
+        "Aucun formulaire de contact n'est disponible sur cette page d'erreur.",
+        "Aucune information sur les heures d'ouverture n'est spécifiée."
+    ],
+    "relevant_links": [
+        "/",
+        "/recherche",
+        "/connexion",
+        "/inscription",
+        "/a-propos",
+        "/comment-ca-marche",
+        "/contact",
+        "/conditions-utilisation",
+        "/politique-confidentialite",
+        "/mentions-legales",
+        "/cgv",
+        "/aide",
+        "/faq",
+        "/blog"
+    ],
+    "file_name": "montoit_contact_page_analysis.json"
+}
+```

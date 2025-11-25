@@ -5,14 +5,14 @@
         "id": "1",
         "content": "Analyse et identification des fichiers sources",
         "details": "Identifier dans le code source React/TypeScript les composants responsables des problèmes UX/UI identifiés : statistiques '0+', images avec filigranes, contrastes, alignements, etc.",
-        "status": "pending",
+        "status": "completed",
         "priority": "high"
       },
       "2": {
         "id": "2",
         "content": "Correction des problèmes critiques",
         "details": "1. Remplacer les statistiques '0+' par des données réelles ou 'Bientôt disponible'\n2. Remplacer les images avec filigranes par des images libres de droits\n3. Améliorer les contrastes de texte sur images\n4. Corriger la faute de frappe 'Abidian' → 'Abidjan'",
-        "status": "pending",
+        "status": "completed",
         "priority": "high"
       },
       "3": {
@@ -33,14 +33,14 @@
         "id": "5",
         "content": "Tests des parcours utilisateur",
         "details": "1. Tester la navigation complète de l'application\n2. Valider le parcours d'inscription/connexion\n3. Tester la recherche de propriétés\n4. Valider la responsivité sur mobile/tablet\n5. Tester l'accessibilité au clavier",
-        "status": "pending",
+        "status": "completed",
         "priority": "medium"
       },
       "6": {
         "id": "6",
-        "content": "Validation et déploiement",
-        "details": "1. Vérifier toutes les corrections apportées\n2. Effectuer les tests finaux\n3. Valider les performances\n4. Préparer le déploiement en production",
-        "status": "pending",
+        "content": "Plan de correction critique pour mise en production",
+        "details": "1. Bloquer le déploiement en production (état actuel non viable)\n2. Corriger la navigation principale (67% des liens défaillants)\n3. Réparer l'authentification (redirections défaillantes)\n4. Optimiser la responsivité mobile\n5. Résoudre les erreurs JavaScript et API Supabase\n6. Créer les pages manquantes (Contact, Aide, FAQ)\n7. Déployer sur domaine de production",
+        "status": "in_progress",
         "priority": "low"
       }
     }
