@@ -1,2 +1,3 @@
-2025/11/25-09:34:47.025 a95 Creating DB /workspace/browser/user_data/Default/GCM Store/Encryption since it was missing.
-2025/11/25-09:34:47.048 a95 Reusing MANIFEST /workspace/browser/user_data/Default/GCM Store/Encryption/MANIFEST-000001
+2025/11/25-13:00:00.017 740 Reusing MANIFEST /workspace/browser/user_data/Default/GCM Store/Encryption/MANIFEST-000001
+2025/11/25-13:00:00.021 740 Recovering log #3
+2025/11/25-13:00:00.021 740 Reusing old log /workspace/browser/user_data/Default/GCM Store/Encryption/000003.log 

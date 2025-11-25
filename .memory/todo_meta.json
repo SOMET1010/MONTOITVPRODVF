@@ -40,7 +40,7 @@
         "id": "6",
         "content": "Plan de correction critique pour mise en production",
         "details": "1. Bloquer le déploiement en production (état actuel non viable)\n2. Corriger la navigation principale (67% des liens défaillants)\n3. Réparer l'authentification (redirections défaillantes)\n4. Optimiser la responsivité mobile\n5. Résoudre les erreurs JavaScript et API Supabase\n6. Créer les pages manquantes (Contact, Aide, FAQ)\n7. Déployer sur domaine de production",
-        "status": "in_progress",
+        "status": "completed",
         "priority": "low"
       }
     }
