@@ -1,2 +1,3 @@
-2025/11/26-16:07:28.610 465 Creating DB /workspace/browser/user_data/Default/IndexedDB/https_montoitv35.netlify.app_0.indexeddb.leveldb since it was missing.
-2025/11/26-16:07:28.627 465 Reusing MANIFEST /workspace/browser/user_data/Default/IndexedDB/https_montoitv35.netlify.app_0.indexeddb.leveldb/MANIFEST-000001
+2025/11/26-23:01:14.014 19de Reusing MANIFEST /workspace/browser/user_data/Default/IndexedDB/https_montoitv35.netlify.app_0.indexeddb.leveldb/MANIFEST-000001
+2025/11/26-23:01:14.018 19de Recovering log #3
+2025/11/26-23:01:14.021 19de Reusing old log /workspace/browser/user_data/Default/IndexedDB/https_montoitv35.netlify.app_0.indexeddb.leveldb/000003.log 
