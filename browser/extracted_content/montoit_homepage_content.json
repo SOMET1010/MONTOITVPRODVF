@@ -6,73 +6,109 @@ Extracted content:
 {
   "title": "Mon Toit - Plateforme de Location Immobilière en Côte d'Ivoire",
   "url": "https://somet1010-montoit-st-dzj4.bolt.host/",
-  "summary": "La page d'accueil de Mon Toit présente une plateforme de location immobilière en Côte d'Ivoire. Elle met en avant la recherche sécurisée de logements, la vérification d'identité par l'ANSUT, le paiement mobile et un support client. La page contient une section de recherche de biens immobiliers, des témoignages clients, des statistiques clés, et une liste de propriétés récentes. Elle vise à rassurer les utilisateurs sur la fiabilité et la modernité de ses services.",
+  "summary": "Mon Toit is a certified real estate platform in Côte d'Ivoire, dedicated to facilitating secure and verified property rentals. The platform emphasizes identity verification through ANSUT, secure mobile money payments (Orange, MTN, Moov Money), and 24/7 customer support. It offers a wide range of property types (apartments, houses, villas, studios) and connects tenants with verified listings, aiming to provide a trustworthy and modern rental experience. The page highlights user testimonials, key statistics, and showcases recent property listings, alongside clear calls to action for both tenants and landlords.",
   "key_points": [
-    "Plateforme de location immobilière dédiée à la Côte d'Ivoire, certifiée ANSUT.",
-    "Recherche de logement sécurisée, avec identité vérifiée et paiement mobile (Orange Money, MTN Money, Moov Money).",
-    "Présentation des avantages : simplicité, confort, espaces pour grandir, vue sur l'avenir.",
-    "Services clés : Identité Vérifiée ANSUT, Paiement Sécurisé, Support 24/7.",
-    "Section de témoignages de locataires satisfaits soulignant la rapidité, la modernité et la fiabilité.",
-    "Statistiques clés (bien que montrant '0+' sur la page fournie, suggérant un problème d'affichage ou de données).",
-    "Affichage de propriétés récentes avec détails (prix, chambres, salles de bain, superficie, localisation).",
-    "Appel à l'action pour trouver un logement ou louer un bien.",
-    "Informations de contact et liens rapides pour la navigation, y compris les conditions d'utilisation et la politique de confidentialité.",
-    "Possibilité de s'inscrire à une newsletter pour les offres et actualités."
-  ],
-  "navigation_elements": {
-    "header_navigation": [
-      { "text": "Mon Toit", "link": "/" },
-      { "text": "Accueil", "link": "/" },
-      { "text": "Rechercher", "link": "/recherche" },
-      { "text": "Connexion", "link": "/connexion" },
-      { "text": "Inscription", "link": "/inscription" }
-    ],
-    "footer_navigation": {
-      "Liens rapides": [
-        { "text": "Accueil", "link": "/" },
-        { "text": "Rechercher", "link": "/recherche" },
-        { "text": "À propos", "link": "/a-propos" },
-        { "text": "Comment ça marche", "link": "/comment-ca-marche" },
-        { "text": "Contact", "link": "/contact" }
-      ],
-      "Légal": [
-        { "text": "Conditions d'utilisation", "link": "/conditions-utilisation" },
-        { "text": "Politique de confidentialité", "link": "/politique-confidentialite" },
-        { "text": "Mentions légales", "link": "/mentions-legales" },
-        { "text": "CGV", "link": "/cgv" }
-      ],
-      "Autres": [
-        { "text": "Aide", "link": "/aide" },
-        { "text": "FAQ", "link": "/faq" },
-        { "text": "Blog", "link": "/blog" }
+    {
+      "section": "Header & Navigation",
+      "details": [
+        "Brand Logo/Name: Mon Toit - Plateforme Immobilière",
+        "Primary Navigation: Accueil, Rechercher, Connexion, Inscription (repeated)",
+        "Certification displayed: Plateforme certifiée ANSUT"
       ]
     },
-    "call_to_action_buttons": [
-      { "text": "Rechercher", "section": "Type de bien" },
-      { "text": "Voir tout", "section": "Propriétés récentes" },
-      { "text": "Voir toutes les propriétés", "section": "Propriétés récentes" },
-      { "text": "Je cherche un logement", "section": "Prêt à trouver votre logement idéal ?" },
-      { "text": "Je loue mon bien", "section": "Prêt à trouver votre logement idéal ?" },
-      { "text": "S'inscrire", "section": "Newsletter" }
-    ]
-  },
-  "main_sections": [
-    "Bandeau d'information: Plateforme certifiée ANSUT",
-    "Section Héros: Trouvez votre logement idéal en Côte d'Ivoire (avec recherche de type de bien)",
-    "Indicateurs de confiance: Chiffres clés (propriétés, locataires, villes)",
-    "Avantages / Propositions de valeur: 'Votre famille mérite le meilleur', 'Clés en main, sérénité garantie', 'Des espaces pour grandir ensemble', 'Le confort que vous cherchiez', 'Votre vue sur l'avenir'",
-    "Fonctionnalités clés: Identité Vérifiée ANSUT, Paiement Sécurisé, Support 24/7",
-    "Témoignages clients: 'Ils ont trouvé leur logement avec Mon Toit'",
-    "Mon Toit en chiffres: Statistiques de la plateforme",
-    "Propriétés récentes: Découverte des dernières annonces vérifiées",
-    "Appel à l'action final: 'Prêt à trouver votre logement idéal ?'",
-    "Footer: Informations sur la société, Liens rapides, Légal, Newsletter, Coordonnées, Droits d'auteur."
-  ],
-  "layout_organization_issues": [
-    "**Duplication de la navigation principale:** Les liens 'Accueil', 'Rechercher', 'Connexion', 'Inscription' apparaissent deux fois de suite en haut de page, après le logo 'Mon Toit', ce qui est redondant et pourrait indiquer un problème de rendu (par exemple, un menu mobile qui ne se cache pas correctement ou une erreur de code).",
-    "**Placeholders d'images manquants/vides:** De nombreux `![]()` sont présents sans aucune source d'image, indiquant des images manquantes ou des placeholders qui n'ont pas été remplis. Cela affecte l'attrait visuel et la compréhension du contenu.",
-    "**Statistiques affichant '0+':** La section 'Mon Toit en chiffres' affiche '0+Propriétés', '0+Locataires', '0+Transactions', '0+Villes'. Cela suggère soit des données non chargées, soit des données de test non mises à jour, ce qui nuit à la crédibilité de la section censée démontrer le succès de la plateforme.",
-    "**Absence de titres clairs pour certains blocs:** Des blocs de texte comme 'Votre famille mérite le meilleur' ou 'Clés en main, sérénité garantie' sont présentés comme des titres de section sans être clairement englobés dans un conteneur visuel distinctif ou un titre de section de niveau supérieur qui les regrouperait thématiquement. Ils sont précédés d'une image vide."
+    {
+      "section": "Hero Section",
+      "details": [
+        "Main Heading (H1 equivalent): \"Trouvez votre logement idéal en Côte d'Ivoire\"",
+        "Key Slogan: \"Location sécurisée • Identité vérifiée • Paiement mobile\"",
+        "Property Search Form: Type de bien (Appartement, Maison, Villa, Studio), Rechercher button",
+        "Introductory Statistics: 1000+ propriétés, 5000+ locataires, 15+ villes"
+      ]
+    },
+    {
+      "section": "Value Proposition / Benefits",
+      "details": [
+        "Benefit 1: \"Votre famille mérite le meilleur\" - Focus on family and home comfort.",
+        "Benefit 2: \"Clés en main, sérénité garantie\" - Emphasizing ease and peace of mind.",
+        "Benefit 3: \"Des espaces pour grandir ensemble\" - Highlighting community and growth.",
+        "Benefit 4: \"Le confort que vous cherchiez\" - Modern and bright interiors.",
+        "Benefit 5: \"Votre vue sur l'avenir\" - Exceptional living environment."
+      ]
+    },
+    {
+      "section": "Trust & Service Pillars",
+      "details": [
+        "Identité Vérifiée ANSUT: All users verified by Agence Nationale de Soutien aux Travailleurs.",
+        "Paiement Sécurisé: Mobile Money payments via Orange Money, MTN Money, Moov Money.",
+        "Support 24/7: Team availability for assistance."
+      ]
+    },
+    {
+      "section": "Testimonials",
+      "details": [
+        "Title (H2 equivalent): \"Ils ont trouvé leur logement avec Mon Toit\"",
+        "Subtitle: \"Plus de 5000 locataires satisfaits\"",
+        "Testimonial 1: Aminata Koné (Étudiante à Cocody) - Praises speed, ANSUT verification, mobile payment.",
+        "Testimonial 2: Jean-Marc Kouassi (Ingénieur au Plateau) - Appreciates service, multiple visits, electronic lease.",
+        "Testimonial 3: Fatou Traoré (Commerçante à Yopougon) - Highlights fraud prevention, verified owners, real listings."
+      ]
+    },
+    {
+      "section": "Mon Toit en chiffres (Statistics)",
+      "details": [
+        "Title (H2 equivalent): \"Mon Toit en chiffres\"",
+        "Subtitle: \"La plateforme immobilière de référence en Côte d'Ivoire\"",
+        "Metrics: 0+ Propriétés, 0+ Locataires, 0+ Transactions, 0+ Villes (Note: these appear as placeholders '0+' in the provided text, contrasting with the initial hero section claims)"
+      ]
+    },
+    {
+      "section": "Recent Properties",
+      "details": [
+        "Title (H2 equivalent): \"Propriétés récentes\"",
+        "Subtitle: \"Découvrez les dernières annonces vérifiées\"",
+        "Call to Action: \"Voir tout\" link to /recherche",
+        "Example Listings (6 total, each with inferred image, 'NOUVEAU' tag, price, type, location, rooms, bathrooms, size):",
+        "- Villa Moderne 4 Chambres - Cocody (Abidjan), 450,000FCFA/mois, 250m²",
+        "- Appartement 3P - Plateau Centre (Abidjan), 180,000FCFA/mois, 120m²",
+        "- Studio Meublé - Marcory Zone 4 (Abidjan), 80,000FCFA/mois, 35m²",
+        "- Duplex 5P - Angré 8ème Tranche (Abidjan), 350,000FCFA/mois, 200m²",
+        "- Appartement 2P - Yopougon Selmer (Abidjan), 75,000FCFA/mois, 65m²",
+        "- Villa 6P avec Piscine - Riviera Golf (Abidjan), 650,000FCFA/mois, 350m²"
+      ]
+    },
+    {
+      "section": "Final Call to Action",
+      "details": [
+        "Heading (H2 equivalent): \"Prêt à trouver votre logement idéal ?\"",
+        "Slogan: \"Rejoignez des milliers d'Ivoiriens qui ont déjà trouvé leur chez-soi avec Mon Toit\"",
+        "CTA 1: \"Je cherche un logement\" (link to /recherche)",
+        "CTA 2: \"Je loue mon bien\" (link to /ajouter-propriete)",
+        "Reinforcement: 100% Sécurisé, Support 24/7"
+      ]
+    },
+    {
+      "section": "Footer",
+      "details": [
+        "Brand Slogan: \"Plateforme immobilière certifiée pour un accès universel au logement en Côte d'Ivoire.\"",
+        "Quick Links: Accueil, Rechercher, À propos, Comment ça marche, Contact",
+        "Legal Links: Conditions d'utilisation, Politique de confidentialité, Mentions légales, CGV",
+        "Newsletter Subscription: \"Recevez nos dernières offres et actualités\", S'inscrire button",
+        "Contact Information: Phone (+225 XX XX XX XX XX), Email (contact@montoit.ci), Location (Abidjan, Côte d'Ivoire)",
+        "Copyright: © 2025 Mon Toit. Tous droits réservés.",
+        "Additional Footer Links: Aide, FAQ, Blog",
+        "Certification: Certifié ANSUT"
+      ]
+    },
+    {
+      "section": "Visual Elements (Inferred Context)",
+      "details": [
+        "Company logo (header, footer)",
+        "Illustrative image for '1000+ propriétés' stats",
+        "Illustrative images for each of the five emotional benefit sections ('Votre famille...', 'Clés en main...', etc.)",
+        "Thumbnail images for each of the six 'Propriétés récentes' listings",
+        "Decorative image near the footer's 'MON TOIT' section"
+      ]
+    }
   ],
   "relevant_links": [
     "/",

@@ -1,0 +1,48 @@
+📄 Extracted from page: Mon Toit - Plateforme de Location Immobilière en Côte d'Ivoire
+URL: https://somet1010-montoit-st-dzj4.bolt.host/
+
+Extracted content:
+```json
+{
+  "title": "Mon Toit - Plateforme de Location Immobilière en Côte d'Ivoire",
+  "url": "https://somet1010-montoit-st-dzj4.bolt.host/",
+  "summary": "La page d'accueil de Mon Toit présente la plateforme comme un service de location immobilière certifié ANSUT en Côte d'Ivoire, mettant en avant la sécurité, l'identité vérifiée et le paiement mobile. Elle offre une fonctionnalité de recherche de biens, affiche des témoignages de locataires satisfaits, et met en avant des propriétés récentes. La page souligne les avantages clés du service et propose des liens de navigation complets vers différentes sections du site.",
+  "key_points": [
+    "**Header Navigation**: Logo 'Mon Toit', liens 'Accueil', 'Rechercher', 'Connexion', 'Inscription'.",
+    "**Hero Section**: Titre 'Trouvez votre logement idéal en Côte d'Ivoire', sous-titre 'Location sécurisée • Identité vérifiée • Paiement mobile', mention 'Plateforme certifiée ANSUT'.",
+    "**Search Functionality**: Formulaire de recherche avec un champ de sélection pour 'Type de bien' (Appartement, Maison, Villa, Studio) et un bouton 'Rechercher'.",
+    "**Key Metrics/Statistics**: Affiche '1000+ propriétés', '5000+ locataires', '15+ villes' (bien que les chiffres dynamiques soient affichés comme '0+' plus bas sur la page).",
+    "**Value Propositions**: Mises en avant sous forme de slogans avec des icônes/images (ex: 'Votre famille mérite le meilleur', 'Clés en main, sérénité garantie').",
+    "**Core Features**: Sections dédiées à 'Identité Vérifiée ANSUT', 'Paiement Sécurisé' (Orange Money, MTN Money, Moov Money), et 'Support 24/7'.",
+    "**Testimonials**: Section 'Ils ont trouvé leur logement avec Mon Toit' présentant des avis de locataires (Aminata Koné, Jean-Marc Kouassi, Fatou Traoré).",
+    "**Mon Toit en Chiffres**: Section affichant des statistiques dynamiques pour 'Propriétés', 'Locataires', 'Transactions', 'Villes' (bien que toutes soient '0+' dans le contenu fourni).",
+    "**Recent Properties**: Section 'Propriétés récentes' présentant une liste de six annonces avec détails (prix, type, ville, chambres, salles de bain, superficie) et des boutons 'Voir tout' et 'Voir toutes les propriétés' pour accéder à la page de recherche.",
+    "**Call to Action (Footer CTA)**: 'Prêt à trouver votre logement idéal ?' avec des boutons 'Je cherche un logement' et 'Je loue mon bien'.",
+    "**Footer Navigation**: Contient un logo 'MON TOIT', une description de la plateforme, des 'Liens rapides' (Accueil, Rechercher, À propos, Comment ça marche, Contact), des liens 'Légal' (Conditions d'utilisation, Politique de confidentialité, Mentions légales, CGV), une section 'Newsletter', des coordonnées (téléphone, email, adresse), et des liens additionnels (Aide, FAQ, Blog)."
+  ],
+  "relevant_links": [
+    "/",
+    "/recherche",
+    "/connexion",
+    "/inscription",
+    "/proprietes/033b06bb-c627-466f-b6a0-9c90e50e37ca",
+    "/proprietes/3a7230c0-1989-4462-955f-91dbc19b4aaf",
+    "/proprietes/18fdad05-dce9-4eb2-85a8-ef0fb04baa4a",
+    "/proprietes/62b70716-d9c3-4809-9828-bdada16e426b",
+    "/proprietes/5ebeb5b5-3b2d-4e1a-90b7-cb2418047009",
+    "/proprietes/5102200f-e7b5-4916-9771-18d0c0152498",
+    "/ajouter-propriete",
+    "/a-propos",
+    "/comment-ca-marche",
+    "/contact",
+    "/conditions-utilisation",
+    "/politique-confidentialite",
+    "/mentions-legales",
+    "/cgv",
+    "/aide",
+    "/faq",
+    "/blog"
+  ],
+  "file_name": "montoit_homepage_analysis.json"
+}
+```

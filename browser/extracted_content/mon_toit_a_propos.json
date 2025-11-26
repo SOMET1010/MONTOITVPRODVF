@@ -6,21 +6,22 @@ Extracted content:
 {
   "title": "Mon Toit - Plateforme de Location Immobilière en Côte d'Ivoire",
   "url": "https://somet1010-montoit-st-dzj4.bolt.host/a-propos",
-  "summary": "Mon Toit est une plateforme immobilière innovante en Côte d'Ivoire dédiée à simplifier, sécuriser et rendre transparent l'accès au logement. Elle connecte propriétaires et locataires en utilisant la signature électronique sécurisée et la vérification d'identité officielle via l'ONECI. Sa mission est de rendre l'accès au logement plus simple, transparent et sécurisé pour tous les Ivoiriens, en garantissant la confiance et la sécurité des transactions. La plateforme offre des garanties telles que la vérification d'identité, des contrats légaux, des paiements sécurisés via Mobile Money et un cachet électronique visible. Elle promeut les valeurs de transparence, sécurité, accessibilité et innovation, tout en respectant les normes nationales de conformité et de protection des utilisateurs, notamment par l'utilisation de CryptoNeo pour la signature électronique.",
+  "summary": "Mon Toit est une plateforme immobilière innovante en Côte d'Ivoire, spécialisée dans la location. Elle vise à simplifier, sécuriser et rendre transparent l'accès au logement pour les Ivoiriens en connectant propriétaires et locataires via une plateforme digitale moderne. La plateforme intègre des technologies clés comme la signature électronique sécurisée et la vérification d'identité officielle pour garantir la confiance et la sécurité des transactions immobilières.",
   "key_points": [
-    "Mon Toit est une plateforme immobilière innovante en Côte d'Ivoire.",
-    "Facilite l'accès au logement grâce à la signature électronique sécurisée et la vérification d'identité officielle (ONECI).",
-    "Mission : Rendre l'accès au logement plus simple, transparent et sécurisé pour tous les Ivoiriens.",
-    "Garanties : Vérification d'identité officielle, signature électronique légale, paiement sécurisé (Mobile Money), cachet électronique visible.",
-    "Valeurs : Transparence, Sécurité, Accessibilité, Innovation.",
-    "Respecte les normes nationales en matière de services numériques et utilise CryptoNeo pour la signature électronique.",
-    "Possibilité de demander un Certificat Électronique de Vérification (CEV) auprès de l'ONECI.",
-    "Contact : contact@mon-toit.ci, Abidjan, Côte d'Ivoire."
+    "Plateforme immobilière innovante pour faciliter l'accès au logement en Côte d'Ivoire.",
+    "Utilisation de la signature électronique sécurisée et de la vérification d'identité officielle (via ONECI).",
+    "Mission: Rendre l'accès au logement simple, transparent et sécurisé pour tous les Ivoiriens.",
+    "Garanties offertes: Vérification d'identité officielle, signature électronique légale conforme à la réglementation ivoirienne, paiement sécurisé via Mobile Money (Orange, MTN, Moov), et cachet électronique visible sur tous les contrats.",
+    "Valeurs: Transparence, Sécurité, Accessibilité, Innovation.",
+    "Sécurité et Conformité: Respect des normes nationales, utilisation de CryptoNeo pour la signature électronique, possibilité de demander un Certificat Électronique de Vérification (CEV) auprès de l'ONECI.",
+    "Informations de contact: Email (contact@mon-toit.ci), Adresse (Abidjan, Côte d'Ivoire).",
+    "Certifié ANSUT."
   ],
   "relevant_links": [
-    "mailto:contact@mon-toit.ci",
     "/",
     "/recherche",
+    "/connexion",
+    "/inscription",
     "/a-propos",
     "/comment-ca-marche",
     "/contact",
