@@ -1,0 +1,120 @@
+import { Mail, Phone, MapPin, Heart } from 'lucide-react';
+
+export default function Footer() {
+  return (
+    <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden shadow-premium">
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-orange-500 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-orange-600 rounded-full blur-3xl" />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+          <div>
+            <div className="flex items-center space-x-3 mb-6 group">
+              <img
+                src="/logo.png"
+                alt="Mon Toit Logo"
+                className="h-16 w-16 object-contain group-hover:scale-110 transition-all duration-300"
+              />
+              <span className="text-3xl font-bold text-white">MON TOIT</span>
+            </div>
+            <p className="text-sm text-gray-200 leading-relaxed mb-4">
+              Plateforme immobilière pour un accès universel au logement en Côte d'Ivoire. Signature électronique certifiée et sécurisée.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-white font-bold mb-5 text-lg flex items-center space-x-2">
+              <span className="text-orange-400">●</span>
+              <span>Liens rapides</span>
+            </h3>
+            <ul className="space-y-3 text-sm">
+              <li>
+                <a href="/" className="hover:text-orange-400 transition-colors hover:translate-x-2 transform inline-block duration-200 font-medium">
+                  🏠 Accueil
+                </a>
+              </li>
+              <li>
+                <a href="/recherche" className="hover:text-orange-400 transition-colors hover:translate-x-2 transform inline-block duration-200 font-medium">
+                  🔍 Rechercher
+                </a>
+              </li>
+              <li>
+                <a href="/a-propos" className="hover:text-orange-400 transition-colors hover:translate-x-2 transform inline-block duration-200 font-medium">
+                  ℹ️ À propos
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-white font-bold mb-5 text-lg flex items-center space-x-2">
+              <span className="text-orange-400">●</span>
+              <span>Légal</span>
+            </h3>
+            <ul className="space-y-3 text-sm">
+              <li>
+                <a href="/conditions-utilisation" className="hover:text-orange-400 transition-colors hover:translate-x-2 transform inline-block duration-200 font-medium">
+                  📋 Conditions d'utilisation
+                </a>
+              </li>
+              <li>
+                <a href="/politique-confidentialite" className="hover:text-orange-400 transition-colors hover:translate-x-2 transform inline-block duration-200 font-medium">
+                  🔒 Politique de confidentialité
+                </a>
+              </li>
+              <li>
+                <a href="/mentions-legales" className="hover:text-orange-400 transition-colors hover:translate-x-2 transform inline-block duration-200 font-medium">
+                  ⚖️ Mentions légales
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-white font-bold mb-5 text-lg flex items-center space-x-2">
+              <span className="text-orange-400">●</span>
+              <span>Contact</span>
+            </h3>
+            <ul className="space-y-3 text-sm">
+              <li className="flex items-center space-x-3 group">
+                <div className="w-8 h-8 bg-orange-900/50 rounded-lg flex items-center justify-center group-hover:bg-orange-800 transition-colors">
+                  <Mail className="h-4 w-4 text-orange-400" />
+                </div>
+                <a href="mailto:contact@mon-toit.ci" className="font-medium text-white hover:text-orange-400 transition-colors">
+                  contact@mon-toit.ci
+                </a>
+              </li>
+              <li className="flex items-center space-x-3 group">
+                <div className="w-8 h-8 bg-orange-900/50 rounded-lg flex items-center justify-center group-hover:bg-orange-800 transition-colors">
+                  <Phone className="h-4 w-4 text-orange-400" />
+                </div>
+                <span className="font-medium text-gray-300 italic">Numéro disponible prochainement</span>
+              </li>
+              <li className="flex items-center space-x-3 group">
+                <div className="w-8 h-8 bg-orange-900/50 rounded-lg flex items-center justify-center group-hover:bg-orange-800 transition-colors">
+                  <MapPin className="h-4 w-4 text-orange-400" />
+                </div>
+                <span className="font-medium text-white">Abidjan, Côte d'Ivoire</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-700/50 mt-12 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <p className="text-sm text-gray-300">
+              &copy; 2025 <span className="font-bold text-white">Mon Toit</span> - Tous droits réservés.
+            </p>
+            <div className="flex items-center space-x-2 text-sm">
+              <span className="text-gray-400">Fait avec</span>
+              <Heart className="h-4 w-4 text-coral-500 animate-pulse" />
+              <span className="text-gray-400">pour l'accès universel au logement</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
