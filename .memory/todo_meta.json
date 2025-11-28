@@ -4,7 +4,7 @@
       "1": {
         "id": "1",
         "content": "🚀 EXÉCUTION: Test complet du système MONTOIT",
-        "details": "✅ CONFIRMÉ - Lancement immédiat du test\n\n🔥 JOUR 1 EN COURS - TESTS CRITIQUES:\n• Authentification & Accès au système\n• Recherche & Découverte de propriétés\n• Navigation & Routing principal\n\n⏳ À SUIVRE:\nJour 2: Tests fonctionnels avancés\nJour 3: Tests d'intégrations\nJour 4: Tests techniques\nJour 5: Tests de validation",
+        "details": "🔥 JOUR 1 EN COURS - TESTS CRITIQUES:\n• TEST 1: Authentification & Accès - EN COURS\n• TEST 2: Recherche & Découverte propriétés\n• TEST 3: Navigation & Routing principal",
         "status": "in_progress",
         "priority": "high"
       },
