@@ -1,5 +1,8 @@
 import { useState } from 'react';
-import { ChevronDown, Search, HelpCircle, Shield, CreditCard, Home, User, MessageCircle } from 'lucide-react';
+import { ChevronDown, Search, HelpCircle, Shield, CreditCard, Home, User, MessageCircle, Phone, Mail } from 'lucide-react';
+import PageHeader from '@/shared/components/PageHeader';
+import FooterCTA from '@/shared/components/FooterCTA';
+import '../../../features/property/styles/homepage-modern.css';
 
 interface FAQItem {
   question: string;
@@ -115,18 +118,19 @@ export default function FAQPage() {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-50 py-12 px-4">
-      <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Questions Fréquentes (FAQ)
-          </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Trouvez rapidement des réponses à toutes vos questions sur Mon Toit
-          </p>
-        </div>
+    <div className="min-h-screen bg-white">
+      <PageHeader
+        title="Questions Fréquentes (FAQ)"
+        subtitle="Trouvez rapidement des réponses à toutes vos questions sur Mon Toit"
+        icon={<HelpCircle className="h-8 w-8 text-white" />}
+        breadcrumbs={[
+          { label: 'FAQ', href: '/faq' }
+        ]}
+      />
 
-        <div className="mb-8">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+
+        <div className="mb-12 animate-fade-in">
           <div className="relative max-w-2xl mx-auto">
             <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
             <input
@@ -139,7 +143,7 @@ export default function FAQPage() {
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-3 mb-12">
+        <div className="flex flex-wrap justify-center gap-3 mb-16 animate-fade-in stagger-1">
           <button
             onClick={() => setSelectedCategory('Tous')}
             className={`px-6 py-3 rounded-xl font-semibold transition-all ${
@@ -169,7 +173,7 @@ export default function FAQPage() {
           })}
         </div>
 
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden mb-8">
+        <div className="bg-white rounded-2xl shadow-xl overflow-hidden mb-16 animate-slide-up stagger-2">
           {filteredFAQ.length === 0 ? (
             <div className="p-12 text-center">
               <HelpCircle className="h-16 w-16 text-gray-300 mx-auto mb-4" />
@@ -212,30 +216,27 @@ export default function FAQPage() {
           )}
         </div>
 
-        <div className="bg-gradient-to-r from-orange-600 to-orange-500 rounded-2xl shadow-xl p-8 md:p-12 text-white text-center">
-          <MessageCircle className="h-12 w-12 mx-auto mb-4" />
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            Vous ne trouvez pas de réponse ?
-          </h2>
-          <p className="text-orange-100 mb-6 text-lg">
-            Notre équipe support est là pour vous aider
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/contact"
-              className="inline-block px-8 py-4 bg-white text-orange-600 font-bold rounded-xl hover:bg-orange-50 transition-all shadow-lg hover:shadow-xl"
-            >
-              Contactez-nous
-            </a>
-            <a
-              href="/aide"
-              className="inline-block px-8 py-4 bg-orange-700 text-white font-bold rounded-xl hover:bg-orange-800 transition-all shadow-lg hover:shadow-xl"
-            >
-              Centre d'aide
-            </a>
-          </div>
-        </div>
       </div>
+
+      <FooterCTA
+        title="Vous ne trouvez pas de réponse ?"
+        subtitle="Notre équipe support est là pour vous accompagner. Contactez-nous par téléphone, email ou via notre centre d'aide."
+        icon={MessageCircle}
+        buttons={[
+          {
+            label: 'Contactez-nous',
+            href: '/contact',
+            icon: Mail,
+            variant: 'primary'
+          },
+          {
+            label: "Centre d'aide",
+            href: '/aide',
+            icon: Phone,
+            variant: 'secondary'
+          }
+        ]}
+      />
     </div>
   );
 }

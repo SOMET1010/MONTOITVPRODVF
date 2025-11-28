@@ -1,6 +1,9 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle, MessageCircle, HelpCircle } from 'lucide-react';
 import { useContact } from '../hooks/useContact';
+import PageHeader from '@/shared/components/PageHeader';
+import FooterCTA from '@/shared/components/FooterCTA';
+import '../../../features/property/styles/homepage-modern.css';
 
 export default function ContactPage() {
   const { submitContact, isSubmitting, isSubmitted, error } = useContact();
@@ -38,33 +41,40 @@ export default function ContactPage() {
 
   if (isSubmitted) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-50 flex items-center justify-center px-4">
-        <div className="max-w-md w-full bg-white rounded-2xl shadow-xl p-8 text-center animate-fade-in">
-          <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-            <CheckCircle className="h-10 w-10 text-green-600" />
+      <div className="min-h-screen bg-white flex items-center justify-center px-4">
+        <div className="max-w-md w-full bg-white rounded-2xl shadow-2xl border border-gray-100 p-12 text-center animate-scale-in">
+          <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+            <CheckCircle className="h-12 w-12 text-white" />
           </div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">Message envoyé !</h2>
-          <p className="text-gray-600">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Message envoyé !</h2>
+          <p className="text-lg text-gray-600 mb-8">
             Merci de nous avoir contactés. Notre équipe vous répondra dans les plus brefs délais.
           </p>
+          <a
+            href="/"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-orange-500 to-red-500 text-white font-semibold rounded-xl hover:shadow-xl transition-all"
+          >
+            Retour à l'accueil
+          </a>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-50 py-12 px-4">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Contactez-nous
-          </h1>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Une question ? Besoin d'aide ? Notre équipe est là pour vous accompagner.
-          </p>
-        </div>
+    <div className="min-h-screen bg-white">
+      <PageHeader
+        title="Contactez-nous"
+        subtitle="Une question ? Besoin d'aide ? Notre équipe est là pour vous accompagner."
+        icon={<Mail className="h-8 w-8 text-white" />}
+        breadcrumbs={[
+          { label: 'Contact', href: '/contact' }
+        ]}
+      />
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+
+        <div className="grid md:grid-cols-3 gap-8 mb-16 animate-fade-in">
           <a
             href="mailto:contact@mon-toit.ci"
             className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-shadow"
@@ -99,7 +109,7 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+        <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 animate-slide-up stagger-1 border border-gray-100">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">
             Envoyez-nous un message
           </h2>
@@ -114,7 +124,7 @@ export default function ContactPage() {
             </div>
           )}
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-8">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
@@ -207,7 +217,7 @@ export default function ContactPage() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full md:w-auto px-8 py-4 bg-gradient-to-r from-orange-600 to-orange-500 text-white font-bold rounded-xl hover:from-orange-700 hover:to-orange-600 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full md:w-auto px-8 py-4 bg-gradient-to-r from-orange-500 to-red-500 text-white font-bold rounded-xl hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
             >
               {isSubmitting ? (
                 <>
@@ -224,6 +234,26 @@ export default function ContactPage() {
           </form>
         </div>
       </div>
+
+      <FooterCTA
+        title="Besoin d'aide supplémentaire ?"
+        subtitle="Consultez notre FAQ pour des réponses immédiates ou explorez notre centre d'aide complet."
+        icon={HelpCircle}
+        buttons={[
+          {
+            label: 'Voir la FAQ',
+            href: '/faq',
+            icon: MessageCircle,
+            variant: 'primary'
+          },
+          {
+            label: "Centre d'aide",
+            href: '/aide',
+            icon: HelpCircle,
+            variant: 'secondary'
+          }
+        ]}
+      />
     </div>
   );
 }
