@@ -3,38 +3,38 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "Corriger problème authentification Supabase HTTP 500",
-        "details": "✅ TERMINÉ - Script de réparation SQL créé, guide de correction complet, fonctions Edge déployées. Taux d'inscription attendu : 0% → 85%.",
-        "status": "completed",
+        "content": "Ajouter un formulaire de contact interactif",
+        "details": "Créer un formulaire de contact complet avec validation côté client et serveur (Supabase). Inclure : nom, email, téléphone, sujet, message. Ajouter une confirmation d'envoi et gestion des erreurs.",
+        "status": "pending",
         "priority": "high"
       },
       "2": {
         "id": "2",
-        "content": "Réparer navigation et liens cassés (67% failure rate)",
-        "details": "✅ TERMINÉ - Navigation réparée : 33% → 94% de liens fonctionnels. Bouton 'Rechercher' réparé, pages Contact/Aide/FAQ intégrées, liens sociaux fonctionnels.",
-        "status": "completed",
+        "content": "Corriger l'erreur JavaScript dans la console",
+        "details": "Identifier et corriger l'erreur 'uncaught.error' détectée dans la console du navigateur. Améliorer la gestion d'erreurs et la stabilité de l'application.",
+        "status": "pending",
         "priority": "high"
       },
       "3": {
         "id": "3",
-        "content": "Implémenter menu hamburger mobile manquant",
-        "details": "✅ TERMINÉ - Menu hamburger mobile créé avec animations fluides, accessibilité WCAG 2.1, touch-optimized pour tous les appareils mobiles.",
-        "status": "completed",
+        "content": "Vérifier et améliorer la page Ajouter une propriété",
+        "details": "S'assurer que la page /dashboard/ajouter-propriete affiche le contenu complet après authentification. Ajouter une page de pré-ajout accessible sans auth pour informer les utilisateurs.",
+        "status": "pending",
         "priority": "medium"
       },
       "4": {
         "id": "4",
-        "content": "Résoudre erreurs JavaScript console (8+ erreurs)",
-        "details": "✅ TERMINÉ - Service Supabase centralisé, ErrorBoundary créé, memory leaks corrigés, performance optimisée. Compatible tous navigateurs.",
-        "status": "completed",
+        "content": "Améliorer la responsivité mobile",
+        "details": "Implémenter et tester un menu hamburger pour mobile. Vérifier l'affichage des pages sur petits écrans. Effectuer des tests sur différentes tailles d'écran.",
+        "status": "pending",
         "priority": "medium"
       },
       "5": {
         "id": "5",
-        "content": "Créer les 4 pages manquantes : Contact, Aide, FAQ, Ajout Propriété",
-        "details": "✅ TERMINÉ - Toutes les pages créées : ContactPage avec formulaire, HelpPage avec tutoriels, FAQPage avec accordéon, AddPropertyPage avec workflow complet.",
-        "status": "completed",
-        "priority": "high"
+        "content": "Optimiser la navigation mobile",
+        "details": "Améliorer l'UX mobile en ajoutant des liens de navigation mobile appropriés et tester l'accessibilité sur tous les appareils.",
+        "status": "pending",
+        "priority": "low"
       }
     }
   }
