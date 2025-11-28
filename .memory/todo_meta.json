@@ -4,14 +4,14 @@
       "1": {
         "id": "1",
         "content": "Ajouter un formulaire de contact interactif",
-        "details": "Formulaire de contact déjà fonctionnel - aucune correction nécessaire",
+        "details": "✅ TERMINÉ - Formulaire de contact déjà fonctionnel, aucune correction nécessaire",
         "status": "completed",
         "priority": "high"
       },
       "2": {
         "id": "2",
         "content": "Corriger l'erreur JavaScript dans la console",
-        "details": "13 corrections appliquées pour résoudre les erreurs Supabase HTTP 400 - Remplacement 'available' par 'disponible' dans 5 fichiers",
+        "details": "✅ TERMINÉ - 13 corrections appliquées dans 5 fichiers. En attente du push manuel vers GitHub pour finalisation.",
         "status": "completed",
         "priority": "high"
       },
