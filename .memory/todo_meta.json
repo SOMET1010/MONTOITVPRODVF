@@ -3,8 +3,8 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "🧪 PHASE 1: Tester les modules critiques",
-        "details": "1. Authentification & Profil (6 pages) - inscription, connexion, 2FA, vérification ANSUT\n2. Recherche & Découverte (5 pages) - filtres, carte Mapbox, recherche vocale/photo\n3. Candidature & Vérification (4 pages) - formulaire, score locataire, biométrique\n4. Contrats & Signature (6 pages) - création, signature CEV, gestion\n5. Paiements (3 pages) - Mobile Money, caution, rappels automatiques",
+        "content": "🚀 EXÉCUTION: Test complet du système MONTOIT",
+        "details": "Jour 1: Tests critiques (Authentification, Recherche, Navigation)\nJour 2: Tests fonctionnels avancés (Profils, Formulaires, API)\nJour 3: Tests d'intégrations (15 services externes, Workflows)\nJour 4: Tests techniques (Performance, Sécurité, Responsive)\nJour 5: Tests de validation (Erreurs, SEO, Monitoring)\n\nObjectif: Tester 80+ pages, 10 modules, 4 rôles utilisateurs, 15 intégrations\nCritères: 0 erreur JS, Lighthouse >90, <3s chargement, 100% fonctionnalités",
         "status": "pending",
         "priority": "high"
       },
