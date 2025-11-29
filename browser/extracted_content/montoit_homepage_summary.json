@@ -1,39 +1,34 @@
 📄 Extracted from page: Mon Toit - Trouvez Votre Logement Idéal en Côte d'Ivoire | Abidjan, Yamoussoukro
-URL: https://somet1010-montoit-st-jcvj.bolt.host/
+URL: https://zms8axnvxg4j.space.minimax.io/
 
 Extracted content:
 ```json
 {
   "title": "Mon Toit - Trouvez Votre Logement Idéal en Côte d'Ivoire | Abidjan, Yamoussoukro",
-  "url": "https://somet1010-montoit-st-jcvj.bolt.host/",
-  "summary": "La page fournie est la page d'accueil de 'Mon Toit', une plateforme immobilière en Côte d'Ivoire, et non la page d'inscription spécifiquement demandée par l'objectif. Par conséquent, l'extraction des champs de formulaire et des options d'inscription directs de la page d'inscription n'est pas possible avec le contenu actuel. \n\nCette page d'accueil présente la plateforme 'Mon Toit' qui vise à aider les utilisateurs à trouver un logement idéal en Côte d'Ivoire (Abidjan, Yamoussoukro) en mettant l'accent sur la location sécurisée, l'identité vérifiée (certifiée ANSUT) et le paiement mobile. Elle offre une barre de recherche pour filtrer les propriétés par type (appartement, maison, villa, studio, bureau, terrain), met en avant des résidences et quartiers populaires, et liste les avantages clés comme la vérification ANSUT, le paiement sécurisé et le support 24/7. La page inclut des témoignages de clients satisfaits, des statistiques sur la plateforme, et une section présentant les propriétés récentes avec leurs détails. Un appel à l'action invite les utilisateurs à rechercher un logement ou à mettre leur bien en location (ce dernier lien menant vers une page d'inscription/dashboard). Le pied de page contient des liens rapides, des informations légales, une option d'inscription à la newsletter et les coordonnées de contact.",
+  "url": "https://zms8axnvxg4j.space.minimax.io/",
+  "summary": "La page d'accueil de Mon Toit se présente comme une plateforme immobilière certifiée par l'ANSUT, dédiée à la recherche de logement idéal en Côte d'Ivoire. Elle met l'accent sur la sécurité des transactions, la vérification de l'identité des utilisateurs et la facilité de paiement via mobile money. Le site permet de rechercher divers types de propriétés (appartements, maisons, villas, studios, bureaux, terrains) et met en avant des quartiers prisés d'Abidjan. La page inclut des témoignages de clients satisfaits, des statistiques clés, des annonces récentes et des appels à l'action clairs pour les locataires et les propriétaires.",
   "key_points": [
-    "Plateforme immobilière 'Mon Toit' en Côte d'Ivoire (Abidjan, Yamoussoukro).",
-    "Proposition de valeur: Location sécurisée, identité vérifiée ANSUT, paiement mobile.",
-    "Fonctionnalité de recherche de logement par type (appartement, maison, villa, studio, bureau, terrain).",
-    "Mises en avant de propriétés et de quartiers (ex: Cocody, résidences modernes).",
-    "Avantages clés: Identité Vérifiée ANSUT, Paiement Sécurisé (Mobile Money), Support 24/7.",
-    "Témoignages de clients satisfaits (Aaminata Koné, Jean-Marc Kouassi, Fatou Traoré).",
-    "Statistiques clés de la plateforme (propriétés, utilisateurs, contrats, villes - affichés à 0+).",
-    "Section 'Propriétés récentes' avec des annonces détaillées (prix, localisation, chambres, sdb, surface).",
-    "Appels à l'action pour 'Rechercher un logement' et 'Louer son bien' (qui redirige vers une inscription/dashboard).",
-    "Pied de page avec liens de navigation rapide, informations légales (Conditions d'utilisation, Politique de confidentialité, Mentions légales, CGV), et option d'inscription à la newsletter.",
-    "Lien d'inscription (`/inscription`) est présent dans le menu de navigation mais la page d'inscription elle-même n'est pas fournie dans le contenu.",
-    "Un lien spécifique pour les propriétaires est 'Je loue mon bien' qui mène à `/inscription?redirect=/dashboard/ajouter-propriete`."
+    "Plateforme immobilière certifiée ANSUT en Côte d'Ivoire.",
+    "Promet une 'Location sécurisée', une 'Identité vérifiée' et un 'Paiement mobile'.",
+    "Permet de rechercher des propriétés par type (Appartement, Maison, Villa, Studio, Bureau, Terrain).",
+    "Met en avant des chiffres clés: 150+ propriétés, 1250+ utilisateurs, 5+ villes (bien que les chiffres soient affichés comme '0+' dans les statistiques détaillées).",
+    "Présente des sections mettant en lumière des propriétés spécifiques (ex: villas à Cocody, résidences modernes) et la découverte des quartiers d'Abidjan.",
+    "Garanties clés: 'Identité Vérifiée ANSUT', 'Paiement Sécurisé' (Orange Money, MTN Money, Moov Money), et 'Support 24/7'.",
+    "Inclut des témoignages de clients satisfaits ayant trouvé leur logement rapidement et en toute sécurité.",
+    "Affiche une section 'Mon Toit en chiffres' soulignant son statut de plateforme de référence.",
+    "Propose une section 'Propriétés récentes' avec des annonces vérifiées et des liens vers toutes les propriétés.",
+    "Appels à l'action: 'Je cherche un logement' et 'Je loue mon bien'.",
+    "Footer complet avec des liens rapides (Accueil, Rechercher, À propos, Comment ça marche, Contact), des informations légales (Conditions d'utilisation, Politique de confidentialité, Mentions légales, CGV), et des coordonnées."
   ],
   "relevant_links": [
     "/",
     "/recherche",
-    "/connexion",
-    "/inscription",
-    "/recherche",
-    "/proprietes/34cb9f03-4e4b-4da5-8633-8102348838f6",
-    "/proprietes/f8ba47c3-f5ed-455e-82a2-6afebb962eb1",
-    "/proprietes/df31aa65-0e1e-43bb-a738-ae5f0b276d62",
-    "/proprietes/2ea0bfe1-2a5c-41c4-a09f-77d2a2539325",
-    "/proprietes/319017f1-4271-4836-8901-0d10061a4c6a",
-    "/proprietes/b129098f-450e-4255-b30e-344246cc6861",
-    "/inscription?redirect=/dashboard/ajouter-propriete",
+    "/messages",
+    "/profil",
+    "/favoris",
+    "/mes-visites",
+    "/recherches-sauvegardees",
+    "/mes-contrats",
     "/a-propos",
     "/comment-ca-marche",
     "/contact",
@@ -43,7 +38,11 @@ Extracted content:
     "/cgv",
     "/aide",
     "/faq",
-    "/blog"
+    "/blog",
+    "/inscription?redirect=/dashboard/ajouter-propriete",
+    "/proprietes/1",
+    "/proprietes/2",
+    "/proprietes/3"
   ],
   "file_name": "montoit_homepage_summary.json"
 }
