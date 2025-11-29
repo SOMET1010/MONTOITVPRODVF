@@ -1,45 +1,38 @@
-📄 Extracted from page: Mon Toit - Plateforme Immobilière Certifiée ANSUT | Côte d'Ivoire
-URL: https://montoitv35.netlify.app/contact
+📄 Extracted from page: Mon Toit - Plateforme de Location Immobilière en Côte d'Ivoire
+URL: https://somet1010-montoit-st-jcvj.bolt.host/contact
 
 Extracted content:
 ```json
 {
-  "title": "Mon Toit - Plateforme Immobilière Certifiée ANSUT | Côte d'Ivoire",
-  "url": "https://montoitv35.netlify.app/contact",
-  "summary": "The requested page '/contact' on the Mon Toit platform resulted in a 404 'Page introuvable' error, explicitly stating 'La page /contact n'existe pas.'. An automatic redirection is announced to occur within 2 seconds. Despite the specific contact page not existing, the footer of the 404 page contains direct contact information including an email address, a phone number, and a physical address in Abidjan, Côte d'Ivoire. The page also features comprehensive navigation links, legal information, and details about the platform's certification by ANSUT.",
+  "title": "Mon Toit - Plateforme de Location Immobilière en Côte d'Ivoire",
+  "url": "https://somet1010-montoit-st-jcvj.bolt.host/contact",
+  "summary": "La page 'Contact' de Mon Toit fournit des informations pour contacter la plateforme immobilière en Côte d'Ivoire. Elle propose différentes méthodes de contact incluant une adresse email (contact@mon-toit.ci) avec une réponse sous 24h, un numéro de téléphone (+225 07 00 00 00 00) disponible du lundi au vendredi de 8h à 18h, et l'adresse physique du bureau principal à Abidjan, Cocody. La page intègre également un formulaire de contact permettant aux utilisateurs d'envoyer un message directement depuis le site, avec des champs pour le nom complet, l'email, le téléphone, le sujet (avec une liste de choix prédéfinis comme question générale, problème de compte, etc.) et le message. De plus, elle renvoie vers une section FAQ et un Centre d'aide pour une assistance supplémentaire. Le pied de page contient des liens rapides, des informations légales, une option d'inscription à la newsletter, et des détails de copyright.",
   "key_points": [
-    "The page accessed at `/contact` displays a '404 Oups ! Page introuvable' error message.",
-    "The system explicitly states 'La page /contact n'existe pas.'",
-    "An automatic redirection is announced to occur within 2 seconds.",
-    "Despite the 404 error on the dedicated contact page, the footer provides direct contact information.",
-    "Contact Email: `contact@montoit.ci`",
-    "Contact Phone: `+225 07 00 00 00 00`",
-    "Physical Address: `Abidjan, Plateau, Côte d'Ivoire`",
-    "The platform is named 'Mon Toit' and is certified by ANSUT, aligning with ANSUT standards for digital public services in Côte d'Ivoire."
+    "Informations de contact disponibles : Email (contact@mon-toit.ci), Téléphone (+225 07 00 00 00 00), et Adresse physique (Abidjan, Cocody).",
+    "Formulaire de contact intégré avec des champs pour Nom, Email, Téléphone, Sujet (sélectionnable) et Message.",
+    "Liens vers des ressources d'aide supplémentaires : FAQ et Centre d'aide.",
+    "Navigation principale incluant Accueil, Rechercher, Connexion, Inscription.",
+    "Section de pied de page avec Liens rapides (Accueil, Rechercher, À propos, Comment ça marche, Contact), informations Légales (Conditions d'utilisation, Politique de confidentialité, Mentions légales, CGV), et option d'inscription à la Newsletter.",
+    "Mention de certification ANSUT.",
+    "Aucune balise script, référence explicite à des services externes (Supabase, APIs), clés API, tokens, appels réseau, ou fichiers JavaScript/CSS inclus n'est présente dans le contenu textuel fourni."
   ],
   "relevant_links": [
     "/",
-    "/explorer",
-    "/publier",
-    "/baux",
-    "/comment-ca-marche",
-    "/aide",
-    "/auth",
     "/recherche",
-    "/certification",
-    "/mentions-legales",
-    "/confidentialite",
-    "/artisans",
-    "/conditions-utilisation",
-    "/protection-donnees",
-    "/accessibilite",
-    "/contact",
-    "https://ansut.ci",
-    "mailto:contact@montoit.ci",
+    "/connexion",
+    "/inscription",
+    "mailto:contact@mon-toit.ci",
     "tel:+2250700000000",
-    "/carte-intelligente",
-    "/favoris",
-    "/profil"
+    "/faq",
+    "/aide",
+    "/a-propos",
+    "/comment-ca-marche",
+    "/contact",
+    "/conditions-utilisation",
+    "/politique-confidentialite",
+    "/mentions-legales",
+    "/cgv",
+    "/blog"
   ],
   "file_name": "montoit_contact_page_extraction.json"
 }

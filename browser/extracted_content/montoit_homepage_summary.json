@@ -1,132 +1,49 @@
-📄 Extracted from page: Mon Toit - Plateforme de Location Immobilière en Côte d'Ivoire
-URL: https://somet1010-montoit-st-dzj4.bolt.host/#
+📄 Extracted from page: Mon Toit - Trouvez Votre Logement Idéal en Côte d'Ivoire | Abidjan, Yamoussoukro
+URL: https://somet1010-montoit-st-jcvj.bolt.host/
 
 Extracted content:
 ```json
 {
-  "title": "Mon Toit - Plateforme de Location Immobilière en Côte d'Ivoire",
-  "url": "https://somet1010-montoit-st-dzj4.bolt.host/#",
-  "summary": "Cette page est la page d'accueil de 'Mon Toit', une plateforme de location immobilière certifiée ANSUT en Côte d'Ivoire. Elle présente la mission de la plateforme, ses avantages clés (location sécurisée, identité vérifiée, paiement mobile), les types de biens disponibles, des témoignages de clients satisfaits, des statistiques clés et une section des propriétés récentes. L'objectif est de faciliter la recherche de logement et la location de biens immobiliers en toute sécurité et avec des services modernes.",
+  "title": "Mon Toit - Trouvez Votre Logement Idéal en Côte d'Ivoire | Abidjan, Yamoussoukro",
+  "url": "https://somet1010-montoit-st-jcvj.bolt.host/",
+  "summary": "La page fournie est la page d'accueil de 'Mon Toit', une plateforme immobilière en Côte d'Ivoire, et non la page d'inscription spécifiquement demandée par l'objectif. Par conséquent, l'extraction des champs de formulaire et des options d'inscription directs de la page d'inscription n'est pas possible avec le contenu actuel. \n\nCette page d'accueil présente la plateforme 'Mon Toit' qui vise à aider les utilisateurs à trouver un logement idéal en Côte d'Ivoire (Abidjan, Yamoussoukro) en mettant l'accent sur la location sécurisée, l'identité vérifiée (certifiée ANSUT) et le paiement mobile. Elle offre une barre de recherche pour filtrer les propriétés par type (appartement, maison, villa, studio, bureau, terrain), met en avant des résidences et quartiers populaires, et liste les avantages clés comme la vérification ANSUT, le paiement sécurisé et le support 24/7. La page inclut des témoignages de clients satisfaits, des statistiques sur la plateforme, et une section présentant les propriétés récentes avec leurs détails. Un appel à l'action invite les utilisateurs à rechercher un logement ou à mettre leur bien en location (ce dernier lien menant vers une page d'inscription/dashboard). Le pied de page contient des liens rapides, des informations légales, une option d'inscription à la newsletter et les coordonnées de contact.",
   "key_points": [
-    "Plateforme immobilière certifiée ANSUT, dédiée à la location en Côte d'Ivoire.",
-    "Promet une location sécurisée, une identité vérifiée pour les utilisateurs et la possibilité de paiement via mobile money (Orange Money, MTN Money, Moov Money).",
-    "Offre un support client 24/7.",
-    "Slogan principal: 'Trouvez votre logement idéal en Côte d'Ivoire'.",
-    "Types de biens recherchables: Appartement, Maison, Villa, Studio.",
-    "Mise en avant des avantages pour les locataires: vérification ANSUT, paiement sécurisé, support continu.",
-    "Statistiques clés de la plateforme: Plus de 1000+ propriétés, 5000+ locataires, 2500+ transactions, présente dans 15+ villes.",
-    "Témoignages positifs de locataires soulignant la rapidité, la sécurité et la modernité des services.",
-    "Présentation de 'Propriétés récentes' avec des aperçus de biens (prix, type, localisation, nombre de chambres/salles de bain, superficie) et un badge 'NOUVEAU'.",
-    "Exemples de propriétés récentes incluent: Villa Moderne 4 Chambres à Cocody (450,000 FCFA/mois), Appartement 3P au Plateau Centre (180,000 FCFA/mois), Studio Meublé à Marcory Zone 4 (80,000 FCFA/mois), Duplex 5P à Angré 8ème Tranche (350,000 FCFA/mois), Appartement 2P à Yopougon Selmer (75,000 FCFA/mois), Villa 6P avec Piscine à Riviera Golf (650,000 FCFA/mois).",
-    "Appels à l'action clairs pour 'Je cherche un logement' et 'Je loue mon bien'.",
-    "Informations de contact et liens rapides pour l'accueil, la recherche, à propos, comment ça marche, contact, et des liens légaux (Conditions d'utilisation, Politique de confidentialité, Mentions légales, CGV).",
-    "Option d'inscription à une newsletter."
+    "Plateforme immobilière 'Mon Toit' en Côte d'Ivoire (Abidjan, Yamoussoukro).",
+    "Proposition de valeur: Location sécurisée, identité vérifiée ANSUT, paiement mobile.",
+    "Fonctionnalité de recherche de logement par type (appartement, maison, villa, studio, bureau, terrain).",
+    "Mises en avant de propriétés et de quartiers (ex: Cocody, résidences modernes).",
+    "Avantages clés: Identité Vérifiée ANSUT, Paiement Sécurisé (Mobile Money), Support 24/7.",
+    "Témoignages de clients satisfaits (Aaminata Koné, Jean-Marc Kouassi, Fatou Traoré).",
+    "Statistiques clés de la plateforme (propriétés, utilisateurs, contrats, villes - affichés à 0+).",
+    "Section 'Propriétés récentes' avec des annonces détaillées (prix, localisation, chambres, sdb, surface).",
+    "Appels à l'action pour 'Rechercher un logement' et 'Louer son bien' (qui redirige vers une inscription/dashboard).",
+    "Pied de page avec liens de navigation rapide, informations légales (Conditions d'utilisation, Politique de confidentialité, Mentions légales, CGV), et option d'inscription à la newsletter.",
+    "Lien d'inscription (`/inscription`) est présent dans le menu de navigation mais la page d'inscription elle-même n'est pas fournie dans le contenu.",
+    "Un lien spécifique pour les propriétaires est 'Je loue mon bien' qui mène à `/inscription?redirect=/dashboard/ajouter-propriete`."
   ],
   "relevant_links": [
-    {
-      "text": "Accueil",
-      "url": "/"
-    },
-    {
-      "text": "Rechercher",
-      "url": "/recherche"
-    },
-    {
-      "text": "Connexion",
-      "url": "/connexion"
-    },
-    {
-      "text": "Inscription",
-      "url": "/inscription"
-    },
-    {
-      "text": "Voir tout",
-      "url": "/recherche"
-    },
-    {
-      "text": "Villa Moderne 4 Chambres - Cocody",
-      "url": "/proprietes/033b06bb-c627-466f-b6a0-9c90e50e37ca"
-    },
-    {
-      "text": "Appartement 3P - Plateau Centre",
-      "url": "/proprietes/3a7230c0-1989-4462-955f-91dbc19b4aaf"
-    },
-    {
-      "text": "Studio Meublé - Marcory Zone 4",
-      "url": "/proprietes/18fdad05-dce9-4eb2-85a8-ef0fb04baa4a"
-    },
-    {
-      "text": "Duplex 5P - Angré 8ème Tranche",
-      "url": "/proprietes/62b70716-d9c3-4809-9828-bdada16e426b"
-    },
-    {
-      "text": "Appartement 2P - Yopougon Selmer",
-      "url": "/proprietes/5ebeb5b5-3b2d-4e1a-90b7-cb2418047009"
-    },
-    {
-      "text": "Villa 6P avec Piscine - Riviera Golf",
-      "url": "/proprietes/5102200f-e7b5-4916-9771-18d0c0152498"
-    },
-    {
-      "text": "Voir toutes les propriétés",
-      "url": "/recherche"
-    },
-    {
-      "text": "Je cherche un logement",
-      "url": "/recherche"
-    },
-    {
-      "text": "Je loue mon bien",
-      "url": "/ajouter-propriete"
-    },
-    {
-      "text": "Accueil (footer)",
-      "url": "/"
-    },
-    {
-      "text": "Rechercher (footer)",
-      "url": "/recherche"
-    },
-    {
-      "text": "À propos",
-      "url": "/a-propos"
-    },
-    {
-      "text": "Comment ça marche",
-      "url": "/comment-ca-marche"
-    },
-    {
-      "text": "Contact",
-      "url": "/contact"
-    },
-    {
-      "text": "Conditions d'utilisation",
-      "url": "/conditions-utilisation"
-    },
-    {
-      "text": "Politique de confidentialité",
-      "url": "/politique-confidentialite"
-    },
-    {
-      "text": "Mentions légales",
-      "url": "/mentions-legales"
-    },
-    {
-      "text": "CGV",
-      "url": "/cgv"
-    },
-    {
-      "text": "Aide",
-      "url": "/aide"
-    },
-    {
-      "text": "FAQ",
-      "url": "/faq"
-    },
-    {
-      "text": "Blog",
-      "url": "/blog"
-    }
+    "/",
+    "/recherche",
+    "/connexion",
+    "/inscription",
+    "/recherche",
+    "/proprietes/34cb9f03-4e4b-4da5-8633-8102348838f6",
+    "/proprietes/f8ba47c3-f5ed-455e-82a2-6afebb962eb1",
+    "/proprietes/df31aa65-0e1e-43bb-a738-ae5f0b276d62",
+    "/proprietes/2ea0bfe1-2a5c-41c4-a09f-77d2a2539325",
+    "/proprietes/319017f1-4271-4836-8901-0d10061a4c6a",
+    "/proprietes/b129098f-450e-4255-b30e-344246cc6861",
+    "/inscription?redirect=/dashboard/ajouter-propriete",
+    "/a-propos",
+    "/comment-ca-marche",
+    "/contact",
+    "/conditions-utilisation",
+    "/politique-confidentialite",
+    "/mentions-legales",
+    "/cgv",
+    "/aide",
+    "/faq",
+    "/blog"
   ],
   "file_name": "montoit_homepage_summary.json"
 }

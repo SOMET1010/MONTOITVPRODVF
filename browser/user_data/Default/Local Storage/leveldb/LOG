@@ -1,3 +1,9 @@
 2025/11/28-15:40:06.584 7b2 Reusing MANIFEST /workspace/browser/user_data/Default/Local Storage/leveldb/MANIFEST-000001
 2025/11/28-15:40:06.590 7b2 Recovering log #4
 2025/11/28-15:40:06.595 7b2 Reusing old log /workspace/browser/user_data/Default/Local Storage/leveldb/000004.log 
+2025/11/28-18:56:10.590 7b3 Level-0 table #8: started
+2025/11/28-18:56:10.597 7b3 Level-0 table #8: 14648 bytes OK
+2025/11/28-18:56:10.603 7b3 Delete type=0 #4
+2025/11/28-21:15:22.290 7b3 Level-0 table #10: started
+2025/11/28-21:15:22.299 7b3 Level-0 table #10: 11660 bytes OK
+2025/11/28-21:15:22.313 7b3 Delete type=0 #7
