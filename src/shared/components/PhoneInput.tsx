@@ -84,7 +84,7 @@ export const PhoneInput: React.FC<PhoneInputProps> = ({
 }) => {
   const [localValue, setLocalValue] = useState('');
   const [isFocused, setIsFocused] = useState(false);
-  const [validation, setValidation] = useState<{ valid: boolean; message: string }>({ valid: false, message: '' });
+  const [validation, setValidation] = useState<{ valid: boolean; message: string }>({ valid: true, message: '' });
   const [hasInteracted, setHasInteracted] = useState(false);
 
   // Synchroniser avec la valeur externe
@@ -96,11 +96,21 @@ export const PhoneInput: React.FC<PhoneInputProps> = ({
     }
   }, [value]);
 
-  // Valider automatiquement
+  // Initialiser la validation au montage (état valide par défaut)
   useEffect(() => {
-    if (autoValidate && hasInteracted) {
+    if (localValue.length === 0) {
+      setValidation({ valid: true, message: '' });
+    }
+  }, []);
+
+  // Valider automatiquement après interaction
+  useEffect(() => {
+    if (autoValidate && hasInteracted && localValue.length > 0) {
       const result = validateIvorianPhone(localValue);
       setValidation(result);
+    } else if (!hasInteracted && localValue.length === 0) {
+      // Réinitialiser à un état valide et neutre au montage
+      setValidation({ valid: true, message: '' });
     }
   }, [localValue, autoValidate, hasInteracted]);
 

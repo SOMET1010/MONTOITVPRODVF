@@ -96,10 +96,17 @@ export default function NotificationCenter() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="relative p-2 text-gray-600 hover:text-terracotta-600 transition-colors"
+        aria-label={isOpen ? 'Fermer les notifications' : 'Ouvrir les notifications'}
+        aria-expanded={isOpen}
+        aria-haspopup="dialog"
+        aria-controls="notification-panel"
       >
-        <Bell className="w-6 h-6" />
+        <Bell className="w-6 h-6" aria-hidden="true" />
         {unreadCount > 0 && (
-          <span className="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+          <span 
+            className="absolute top-0 right-0 bg-red-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center"
+            aria-label={`${unreadCount} notification${unreadCount > 1 ? 's' : ''} non lue${unreadCount > 1 ? 's' : ''}`}
+          >
             {unreadCount > 9 ? '9+' : unreadCount}
           </span>
         )}
@@ -127,16 +134,18 @@ export default function NotificationCenter() {
                   <button
                     onClick={handleMarkAllAsRead}
                     className="text-sm text-terracotta-600 hover:underline font-medium flex items-center space-x-1"
+                    aria-label={`Marquer toutes les notifications comme lues`}
                   >
-                    <CheckCheck className="w-4 h-4" />
+                    <CheckCheck className="w-4 h-4" aria-hidden="true" />
                     <span>Tout marquer lu</span>
                   </button>
                 )}
                 <button
                   onClick={() => setIsOpen(false)}
                   className="text-gray-400 hover:text-gray-600"
+                  aria-label="Fermer les notifications"
                 >
-                  <X className="w-5 h-5" />
+                  <X className="w-5 h-5" aria-hidden="true" />
                 </button>
               </div>
             </div>
@@ -171,9 +180,9 @@ export default function NotificationCenter() {
                       <button
                         onClick={() => handleMarkAsRead(notification.id)}
                         className="ml-2 p-1 text-green-600 hover:bg-green-50 rounded transition-colors"
-                        title="Marquer comme lu"
+                        aria-label="Marquer cette notification comme lue"
                       >
-                        <Check className="w-4 h-4" />
+                        <Check className="w-4 h-4" aria-hidden="true" />
                       </button>
                     )}
                   </div>

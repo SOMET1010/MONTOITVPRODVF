@@ -88,14 +88,14 @@ export default function Header() {
             </a>
             <a
               href="/aide"
-              className="flex items-center space-x-1.5 px-3 py-2 rounded-xl text-sm text-gray-700 hover:bg-gradient-to-r hover:from-purple-50 hover:to-purple-100 hover:text-purple-700 transition-all duration-200 font-semibold whitespace-nowrap"
+              className="flex items-center space-x-1.5 px-3 py-2 rounded-xl text-sm text-neutral-700 hover:bg-primary-50 hover:text-primary-700 transition-all duration-200 font-semibold whitespace-nowrap"
             >
               <HelpCircle className="h-4 w-4" />
               <span>Aide</span>
             </a>
             <a
               href="/contact"
-              className="flex items-center space-x-1.5 px-3 py-2 rounded-xl text-sm text-gray-700 hover:bg-gradient-to-r hover:from-orange-50 hover:to-orange-100 hover:text-orange-700 transition-all duration-200 font-semibold whitespace-nowrap"
+              className="flex items-center space-x-1.5 px-3 py-2 rounded-xl text-sm text-neutral-700 hover:bg-primary-50 hover:text-primary-700 transition-all duration-200 font-semibold whitespace-nowrap"
             >
               <Mail className="h-4 w-4" />
               <span>Contact</span>
@@ -104,7 +104,7 @@ export default function Header() {
               <>
                 <a
                   href="/messages"
-                  className="flex items-center space-x-1.5 px-3 py-2 rounded-xl text-sm text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-blue-100 hover:text-blue-700 transition-all duration-200 font-semibold relative whitespace-nowrap"
+                  className="flex items-center space-x-1.5 px-3 py-2 rounded-xl text-sm text-neutral-700 hover:bg-primary-50 hover:text-primary-700 transition-all duration-200 font-semibold relative whitespace-nowrap"
                 >
                   <MessageCircle className="h-4 w-4" />
                   <span>Messages</span>
@@ -116,14 +116,14 @@ export default function Header() {
                 </a>
                 <a
                   href="/mes-visites"
-                  className="flex items-center space-x-1.5 px-3 py-2 rounded-xl text-sm text-gray-700 hover:bg-gradient-to-r hover:from-green-50 hover:to-green-100 hover:text-green-700 transition-all duration-200 font-semibold whitespace-nowrap"
+                  className="flex items-center space-x-1.5 px-3 py-2 rounded-xl text-sm text-neutral-700 hover:bg-primary-50 hover:text-primary-700 transition-all duration-200 font-semibold whitespace-nowrap"
                 >
                   <Calendar className="h-4 w-4" />
                   <span>Visites</span>
                 </a>
                 <a
                   href="/favoris"
-                  className="flex items-center space-x-1.5 px-3 py-2 rounded-xl text-sm text-gray-700 hover:bg-gradient-to-r hover:from-red-50 hover:to-pink-50 hover:text-red-700 transition-all duration-200 font-semibold whitespace-nowrap"
+                  className="flex items-center space-x-1.5 px-3 py-2 rounded-xl text-sm text-neutral-700 hover:bg-primary-50 hover:text-primary-700 transition-all duration-200 font-semibold whitespace-nowrap"
                 >
                   <Heart className="h-4 w-4" />
                   <span>Favoris</span>
@@ -132,7 +132,7 @@ export default function Header() {
                   <button
                     onMouseEnter={() => setShowNotifMenu(true)}
                     onClick={() => setShowNotifMenu(!showNotifMenu)}
-                    className="flex items-center space-x-2 px-4 py-2 rounded-2xl text-gray-700 hover:bg-gradient-to-r hover:from-orange-50 hover:to-yellow-50 hover:text-orange-700 transition-all duration-300 font-semibold transform hover:scale-105"
+                    className="flex items-center space-x-2 px-4 py-2 rounded-2xl text-neutral-700 hover:bg-primary-50 hover:text-primary-700 transition-all duration-300 font-semibold transform hover:scale-105"
                   >
                     <Bell className="h-5 w-5" />
                     <span>Alertes</span>
@@ -370,19 +370,19 @@ export default function Header() {
                 <div className="hidden lg:block">
                   <RoleSwitcher />
                 </div>
-                <div className="hidden md:flex items-center space-x-2 bg-gradient-to-r from-amber-50 to-coral-50 px-3 py-1.5 rounded-xl">
+                <div className="hidden md:flex items-center space-x-2 bg-primary-50 px-3 py-1.5 rounded-xl">
                   {profile?.avatar_url ? (
                     <img
                       src={profile.avatar_url}
-                      alt="Avatar"
-                      className="h-8 w-8 rounded-full border-2 border-terracotta-300 shadow-md"
+                      alt={profile.full_name ? `Avatar de ${profile.full_name}` : 'Avatar utilisateur'}
+                      className="h-8 w-8 rounded-full border-2 border-primary-100 shadow-md"
                     />
                   ) : (
-                    <div className="h-8 w-8 rounded-full bg-gradient-to-br from-terracotta-500 to-coral-500 flex items-center justify-center text-white font-bold text-sm shadow-glow">
+                    <div className="h-8 w-8 rounded-full bg-primary-500 flex items-center justify-center text-white font-bold text-sm shadow-md">
                       {profile?.full_name?.[0] || 'U'}
                     </div>
                   )}
-                  <span className="text-xs font-bold text-gray-800 max-w-[100px] truncate">
+                  <span className="text-xs font-bold text-neutral-900 max-w-[100px] truncate">
                     {profile?.full_name || 'Utilisateur'}
                   </span>
                 </div>
@@ -391,7 +391,7 @@ export default function Header() {
                 </div>
                 <button
                   onClick={() => signOut()}
-                  className="hidden md:flex items-center space-x-1.5 px-3 py-2 rounded-xl text-sm text-gray-700 hover:bg-red-50 hover:text-red-600 transition-all duration-200 font-semibold whitespace-nowrap"
+                  className="hidden md:flex items-center space-x-1.5 px-3 py-2 rounded-xl text-sm text-neutral-700 hover:bg-primary-50 hover:text-primary-700 transition-all duration-200 font-semibold whitespace-nowrap"
                 >
                   <LogOut className="h-4 w-4" />
                   <span>Déconnexion</span>
@@ -409,7 +409,7 @@ export default function Header() {
               <>
                 <a
                   href="/connexion"
-                  className="hidden sm:block text-terracotta-600 hover:text-terracotta-700 font-bold transition-colors transform hover:scale-105 transition-all duration-300"
+                  className="hidden sm:block text-primary-700 hover:text-primary-900 font-bold transition-colors transform hover:scale-105 transition-all duration-300"
                 >
                   Connexion
                 </a>
@@ -457,11 +457,11 @@ export default function Header() {
                 Contact
               </a>
               <div className="border-t border-gray-200 my-2 pt-2">
-                <a href="/connexion" className="block py-2 px-4 rounded-lg bg-orange-50 text-orange-600 hover:bg-orange-100 font-bold">
+                <a href="/connexion" className="block py-2 px-4 rounded-lg bg-primary-50 text-primary-700 hover:bg-primary-100 font-bold">
                   <LogIn className="h-4 w-4 inline mr-2" />
                   Connexion
                 </a>
-                <a href="/inscription" className="block py-2 px-4 rounded-lg bg-orange-600 text-white hover:bg-orange-700 font-bold mt-2">
+                <a href="/inscription" className="block py-2 px-4 rounded-lg bg-primary-700 text-white hover:bg-primary-900 font-bold mt-2">
                   <UserPlus className="h-4 w-4 inline mr-2" />
                   Inscription
                 </a>

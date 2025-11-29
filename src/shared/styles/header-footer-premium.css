@@ -15,7 +15,7 @@
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border-bottom: 1px solid rgba(255, 107, 53, 0.1);
+  border-bottom: 1px solid var(--color-primary-500, #FF6C2F);
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -23,8 +23,8 @@
 .header-premium.scrolled {
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12),
-              0 0 0 1px rgba(255, 107, 53, 0.2) inset;
-  border-bottom-color: rgba(255, 107, 53, 0.2);
+              0 0 0 1px rgba(var(--color-primary-500), 0.2) inset;
+  border-bottom-color: rgba(var(--color-primary-500), 0.2);
 }
 
 /* Logo Animé */
@@ -43,7 +43,7 @@
   position: absolute;
   inset: -4px;
   background: radial-gradient(circle at center,
-    rgba(255, 107, 53, 0.2) 0%,
+    rgba(var(--color-primary-500), 0.2) 0%,
     transparent 70%
   );
   filter: blur(10px);
@@ -90,13 +90,13 @@
   left: 50%;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #ff6b35 0%, #ff9933 100%);
+  background: linear-gradient(90deg, var(--color-primary-500) 0%, var(--color-primary-700) 100%);
   transform: translateX(-50%);
   transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-nav-link:hover {
-  color: #ff6b35;
+  color: var(--color-primary-500);
 }
 
 .header-nav-link:hover::after {
@@ -104,7 +104,7 @@
 }
 
 .header-nav-link.active {
-  color: #ff6b35;
+  color: var(--color-primary-500);
 }
 
 .header-nav-link.active::after {
@@ -131,14 +131,14 @@
 .header-btn-primary {
   position: relative;
   padding: 0.625rem 1.5rem;
-  background: linear-gradient(135deg, #ff6b35 0%, #ff9933 100%);
+  background: linear-gradient(135deg, var(--color-primary-500) 0%, var(--color-primary-700) 100%);
   background-size: 200% 200%;
   color: white;
   font-weight: 600;
   border-radius: 9999px;
   overflow: hidden;
   isolation: isolate;
-  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 4px 12px rgba(var(--color-primary-500), 0.3);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   animation: header-btn-gradient 3s ease infinite;
 }
@@ -154,8 +154,8 @@
 
 .header-btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(255, 107, 53, 0.4),
-              0 0 20px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 8px 24px rgba(var(--color-primary-500), 0.4),
+              0 0 20px rgba(var(--color-primary-500), 0.3);
 }
 
 /* Ripple effect sur bouton */
@@ -177,18 +177,18 @@
 
 .header-btn-secondary {
   padding: 0.625rem 1.5rem;
-  color: #ff6b35;
+  color: var(--color-primary-500);
   font-weight: 600;
-  border: 2px solid #ff6b35;
+  border: 2px solid var(--color-primary-500);
   border-radius: 9999px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-btn-secondary:hover {
-  background: #ff6b35;
+  background: var(--color-primary-500);
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 8px 24px rgba(var(--color-primary-500), 0.3);
 }
 
 /* Icons animés dans les boutons */
@@ -283,7 +283,7 @@
   position: absolute;
   width: 3px;
   height: 3px;
-  background: radial-gradient(circle, rgba(255, 107, 53, 0.6) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(var(--color-primary-500), 0.6) 0%, transparent 70%);
   border-radius: 50%;
   animation: footer-particle-float 20s linear infinite;
 }
@@ -314,9 +314,9 @@
   height: 100px;
   background: linear-gradient(90deg,
     transparent 0%,
-    rgba(255, 107, 53, 0.05) 25%,
-    rgba(255, 107, 53, 0.1) 50%,
-    rgba(255, 107, 53, 0.05) 75%,
+    rgba(var(--color-primary-500), 0.05) 25%,
+    rgba(var(--color-primary-500), 0.1) 50%,
+    rgba(var(--color-primary-500), 0.05) 75%,
     transparent 100%
   );
   animation: footer-wave-move 15s linear infinite;
@@ -333,7 +333,7 @@
 
 /* Sections avec Glow */
 .footer-section-title {
-  background: linear-gradient(135deg, #ffffff 0%, #ffd699 50%, #ff9933 100%);
+  background: linear-gradient(135deg, #ffffff 0%, var(--color-primary-100) 50%, var(--color-primary-500) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -341,7 +341,7 @@
   font-weight: 700;
   font-size: 1.125rem;
   margin-bottom: 1rem;
-  filter: drop-shadow(0 0 10px rgba(255, 107, 53, 0.3));
+  filter: drop-shadow(0 0 10px rgba(var(--color-primary-500), 0.3));
 }
 
 .footer-link {
@@ -358,7 +358,7 @@
   left: 0;
   width: 0;
   height: 1px;
-  background: linear-gradient(90deg, #ff6b35 0%, #ff9933 100%);
+  background: linear-gradient(90deg, var(--color-primary-500) 0%, var(--color-primary-700) 100%);
   transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -372,7 +372,7 @@
 
 /* Hover glow sur les liens */
 .footer-link:hover {
-  text-shadow: 0 0 10px rgba(255, 107, 53, 0.5);
+  text-shadow: 0 0 10px rgba(var(--color-primary-500), 0.5);
 }
 
 /* Social Icons Premium */
@@ -398,7 +398,7 @@
   position: absolute;
   inset: 0;
   background: radial-gradient(circle at center,
-    rgba(255, 107, 53, 0.3) 0%,
+    rgba(var(--color-primary-500), 0.3) 0%,
     transparent 70%
   );
   filter: blur(10px);
@@ -407,11 +407,11 @@
 }
 
 .footer-social-icon:hover {
-  background: rgba(255, 107, 53, 0.2);
-  border-color: rgba(255, 107, 53, 0.5);
+  background: rgba(var(--color-primary-500), 0.2);
+  border-color: rgba(var(--color-primary-500), 0.5);
   color: white;
   transform: scale(1.1) rotate(5deg);
-  box-shadow: 0 0 20px rgba(255, 107, 53, 0.5);
+  box-shadow: 0 0 20px rgba(var(--color-primary-500), 0.5);
 }
 
 .footer-social-icon:hover::before {
@@ -453,20 +453,20 @@
 
 .footer-newsletter-input:focus {
   background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 107, 53, 0.5);
-  box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1),
-              0 0 20px rgba(255, 107, 53, 0.2);
+  border-color: rgba(var(--color-primary-500), 0.5);
+  box-shadow: 0 0 0 3px rgba(var(--color-primary-500), 0.1),
+              0 0 20px rgba(var(--color-primary-500), 0.2);
   outline: none;
 }
 
 .footer-newsletter-btn {
   padding: 0.75rem 1.5rem;
-  background: linear-gradient(135deg, #ff6b35 0%, #ff9933 100%);
+  background: linear-gradient(135deg, var(--color-primary-500) 0%, var(--color-primary-700) 100%);
   background-size: 200% 200%;
   color: white;
   font-weight: 600;
   border-radius: 9999px;
-  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+  box-shadow: 0 4px 12px rgba(var(--color-primary-500), 0.3);
   transition: all 0.3s;
   animation: footer-btn-gradient 3s ease infinite;
 }
@@ -482,7 +482,7 @@
 
 .footer-newsletter-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(255, 107, 53, 0.5);
+  box-shadow: 0 8px 24px rgba(var(--color-primary-500), 0.5);
 }
 
 /* Success animation pour newsletter */
@@ -544,7 +544,7 @@
   position: absolute;
   width: 2px;
   height: 2px;
-  background: rgba(255, 107, 53, 0.5);
+  background: rgba(var(--color-primary-500), 0.5);
   border-radius: 50%;
   animation: footer-copyright-particle-rise 4s linear infinite;
 }
@@ -571,7 +571,7 @@
   height: 1px;
   background: linear-gradient(90deg,
     transparent 0%,
-    rgba(255, 107, 53, 0.3) 50%,
+    rgba(var(--color-primary-500), 0.3) 50%,
     transparent 100%
   );
   background-size: 200% 100%;
@@ -645,6 +645,6 @@
   }
   
   .header-nav-link:hover {
-    color: #ff9933;
+    color: var(--color-primary-700);
   }
 }

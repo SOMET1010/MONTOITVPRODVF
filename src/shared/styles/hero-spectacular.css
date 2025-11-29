@@ -10,10 +10,10 @@
 .hero-title-spectacular {
   background: linear-gradient(135deg, 
     #ffffff 0%, 
-    #fff5e6 25%,
-    #ffd699 50%,
-    #ff9933 75%,
-    #ff6b35 100%
+    var(--color-primary-50) 25%,
+    var(--color-primary-100) 50%,
+    var(--color-primary-700) 75%,
+    var(--color-primary-500) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -21,9 +21,9 @@
   text-fill-color: transparent;
   
   /* Multi-layer text shadow pour profondeur */
-  filter: drop-shadow(0 0 30px rgba(255, 107, 53, 0.5))
+  filter: drop-shadow(0 0 30px rgba(var(--color-primary-500), 0.5))
           drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3))
-          drop-shadow(0 8px 40px rgba(255, 107, 53, 0.2));
+          drop-shadow(0 8px 40px rgba(var(--color-primary-500), 0.2));
   
   /* Animation subtile de brillance */
   animation: hero-shine 3s ease-in-out infinite;
@@ -43,8 +43,8 @@
   color: rgba(255, 255, 255, 0.95);
   text-shadow: 
     0 2px 10px rgba(0, 0, 0, 0.3),
-    0 4px 20px rgba(255, 107, 53, 0.2),
-    0 0 40px rgba(255, 107, 53, 0.1);
+    0 4px 20px rgba(var(--color-primary-500), 0.2),
+    0 0 40px rgba(var(--color-primary-500), 0.1);
   
   /* Effet glow subtil */
   animation: hero-glow 2s ease-in-out infinite alternate;
@@ -54,14 +54,14 @@
   from {
     text-shadow: 
       0 2px 10px rgba(0, 0, 0, 0.3),
-      0 4px 20px rgba(255, 107, 53, 0.2),
-      0 0 40px rgba(255, 107, 53, 0.1);
+      0 4px 20px rgba(var(--color-primary-500), 0.2),
+      0 0 40px rgba(var(--color-primary-500), 0.1);
   }
   to {
     text-shadow: 
       0 2px 10px rgba(0, 0, 0, 0.3),
-      0 4px 20px rgba(255, 107, 53, 0.4),
-      0 0 60px rgba(255, 107, 53, 0.3);
+      0 4px 20px rgba(var(--color-primary-500), 0.4),
+      0 0 60px rgba(var(--color-primary-500), 0.3);
   }
 }
 
@@ -97,7 +97,7 @@
   position: absolute;
   width: 4px;
   height: 4px;
-  background: radial-gradient(circle, rgba(255, 107, 53, 0.8) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(var(--color-primary-500), 0.8) 0%, transparent 70%);
   border-radius: 50%;
   animation: hero-particle-float 15s linear infinite;
   opacity: 0;
@@ -139,9 +139,9 @@
   height: 100%;
   background: linear-gradient(90deg, 
     transparent 0%, 
-    rgba(255, 107, 53, 0.1) 25%,
-    rgba(255, 107, 53, 0.2) 50%,
-    rgba(255, 107, 53, 0.1) 75%,
+    rgba(var(--color-primary-500), 0.1) 25%,
+    rgba(var(--color-primary-500), 0.2) 50%,
+    rgba(var(--color-primary-500), 0.1) 75%,
     transparent 100%
   );
   animation: hero-wave-move 20s linear infinite;
@@ -181,7 +181,7 @@
   box-shadow: 
     0 8px 32px rgba(0, 0, 0, 0.2),
     0 0 0 1px rgba(255, 255, 255, 0.1) inset,
-    0 0 60px rgba(255, 107, 53, 0.2);
+    0 0 60px rgba(var(--color-primary-500), 0.2);
   
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -191,7 +191,7 @@
   box-shadow: 
     0 12px 48px rgba(0, 0, 0, 0.3),
     0 0 0 1px rgba(255, 255, 255, 0.2) inset,
-    0 0 80px rgba(255, 107, 53, 0.4);
+    0 0 80px rgba(var(--color-primary-500), 0.4);
   transform: translateY(-2px);
 }
 
@@ -199,8 +199,8 @@
   background: rgba(255, 255, 255, 0.25);
   box-shadow: 
     0 16px 64px rgba(0, 0, 0, 0.4),
-    0 0 0 2px rgba(255, 107, 53, 0.5) inset,
-    0 0 100px rgba(255, 107, 53, 0.6);
+    0 0 0 2px rgba(var(--color-primary-500), 0.5) inset,
+    0 0 100px rgba(var(--color-primary-500), 0.6);
   transform: translateY(-4px) scale(1.02);
 }
 
@@ -214,8 +214,8 @@
   position: absolute;
   inset: -20px;
   background: radial-gradient(circle at center, 
-    rgba(255, 107, 53, 0.3) 0%,
-    rgba(255, 107, 53, 0.1) 40%,
+    rgba(var(--color-primary-500), 0.3) 0%,
+    rgba(var(--color-primary-500), 0.1) 40%,
     transparent 70%
   );
   filter: blur(30px);
@@ -334,11 +334,11 @@
   width: 32px;
   border-radius: 4px;
   background: linear-gradient(90deg, 
-    rgba(255, 107, 53, 1) 0%,
+    rgba(var(--color-primary-500), 1) 0%,
     rgba(255, 153, 51, 1) 100%
   );
   box-shadow: 
-    0 0 20px rgba(255, 107, 53, 0.6),
+    0 0 20px rgba(var(--color-primary-500), 0.6),
     0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -350,7 +350,7 @@
 @media (max-width: 640px) {
   .hero-title-spectacular {
     animation: none;
-    filter: drop-shadow(0 0 20px rgba(255, 107, 53, 0.4))
+    filter: drop-shadow(0 0 20px rgba(var(--color-primary-500), 0.4))
             drop-shadow(0 2px 10px rgba(0, 0, 0, 0.3));
   }
   

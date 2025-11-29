@@ -102,12 +102,19 @@ export default function LanguageSelector({
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center space-x-2 px-4 py-2 rounded-lg bg-white border-2 border-gray-200 hover:border-terracotta-400 transition-all"
         disabled={translating}
+        aria-label={`Langue actuelle: ${currentLang.nativeName}. Cliquer pour changer la langue`}
+        aria-expanded={isOpen}
+        aria-haspopup="listbox"
       >
-        <Globe className="h-5 w-5 text-terracotta-600" />
-        <span className="text-2xl">{currentLang.flag}</span>
+        <Globe className="h-5 w-5 text-terracotta-600" aria-hidden="true" />
+        <span className="text-2xl" aria-hidden="true">{currentLang.flag}</span>
         <span className="font-medium text-gray-700">{currentLang.nativeName}</span>
         {translating && (
-          <div className="animate-spin h-4 w-4 border-2 border-terracotta-500 border-t-transparent rounded-full"></div>
+          <div 
+            className="animate-spin h-4 w-4 border-2 border-terracotta-500 border-t-transparent rounded-full"
+            aria-label="Changement de langue en cours"
+            role="status"
+          ></div>
         )}
       </button>
 

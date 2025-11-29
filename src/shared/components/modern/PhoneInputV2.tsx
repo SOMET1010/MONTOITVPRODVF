@@ -50,6 +50,7 @@ export const PhoneInputV2: React.FC<PhoneInputV2Props> = ({
 }) => {
   const [localValue, setLocalValue] = useState('');
   const [isFocused, setIsFocused] = useState(false);
+  const [hasInteracted, setHasInteracted] = useState(false);
 
   // Synchroniser avec la valeur externe
   useEffect(() => {
@@ -63,6 +64,7 @@ export const PhoneInputV2: React.FC<PhoneInputV2Props> = ({
     const input = e.target.value;
     const formatted = formatPhone(input);
     setLocalValue(formatted);
+    setHasInteracted(true);
     
     // Retourner le numéro complet avec indicatif
     const numbers = formatted.replace(/\D/g, '');
@@ -70,10 +72,17 @@ export const PhoneInputV2: React.FC<PhoneInputV2Props> = ({
     onChange(fullNumber);
   };
 
+  // Gérer l'état initial au montage
+  useEffect(() => {
+    if (localValue.length === 0) {
+      setHasInteracted(false);
+    }
+  }, []);
+
   const numbers = localValue.replace(/\D/g, '');
   const isValid = isValidIvorianPhone(localValue);
-  const showSuccess = numbers.length === 10 && isValid;
-  const showError = error || (numbers.length === 10 && !isValid);
+  const showSuccess = hasInteracted && numbers.length === 10 && isValid;
+  const showError = hasInteracted && (error || (numbers.length === 10 && !isValid));
 
   return (
     <div className={`phone-input-v2 ${className}`}>
@@ -144,7 +153,7 @@ export const PhoneInputV2: React.FC<PhoneInputV2Props> = ({
       )}
 
       {/* Aide */}
-      {!showError && !showSuccess && numbers.length > 0 && (
+      {hasInteracted && !showError && !showSuccess && numbers.length > 0 && (
         <p className="mt-2 text-sm text-gray-500">
           {10 - numbers.length} chiffre{10 - numbers.length > 1 ? 's' : ''} restant{10 - numbers.length > 1 ? 's' : ''}
         </p>
