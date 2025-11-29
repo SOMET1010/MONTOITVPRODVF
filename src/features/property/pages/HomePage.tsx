@@ -3,6 +3,8 @@ import '../styles/homepage-modern.css';
 import { Search, MapPin, Star, Shield, TrendingUp, Users, CheckCircle, ArrowRight, Sparkles, Home as HomeIcon } from 'lucide-react';
 import { supabase } from '@/services/supabase/client';
 import type { Database } from '@/shared/lib/database.types';
+import { envConfig } from '@/shared/config/env.config';
+import { demoPropertyService } from '@/shared/services/demoDataService';
 import HeroSlideshow from '../components/HeroSlideshow';
 import SEOHead, { createOrganizationStructuredData, createWebsiteStructuredData } from '@/shared/components/SEOHead';
 
@@ -52,6 +54,14 @@ export default function Home() {
 
   const loadProperties = async () => {
     try {
+      if (envConfig.isDemoMode) {
+        console.log('🎭 Mode démo - Chargement des propriétés de démonstration');
+        const { data, error } = await demoPropertyService.getAll();
+        setProperties(data || []);
+        setLoading(false);
+        return;
+      }
+
       const { data, error } = await supabase
         .from('properties')
         .select('*')
@@ -71,6 +81,16 @@ export default function Home() {
 
   const loadStats = async () => {
     try {
+      if (envConfig.isDemoMode) {
+        console.log('🎭 Mode démo - Statistiques de démonstration');
+        setStats({
+          propertiesCount: 150,
+          tenantsCount: 1250,
+          citiesCount: 5
+        });
+        return;
+      }
+
       const [propertiesResult, profilesResult, citiesResult] = await Promise.all([
         supabase.from('properties').select('id', { count: 'exact', head: true }).eq('status', 'disponible'),
         supabase.from('profiles').select('id', { count: 'exact', head: true }),

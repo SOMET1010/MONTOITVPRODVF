@@ -4,6 +4,7 @@ import { supabase } from '@/services/supabase/client';
 import type { Database } from '@/shared/lib/database.types';
 import { testDatabaseConnection } from '@/shared/lib/helpers/supabaseHealthCheck';
 import { logger } from '@/shared/lib/logger';
+import { envConfig } from '@/shared/config/env.config';
 
 type Profile = Database['public']['Tables']['profiles']['Row'];
 
@@ -39,6 +40,50 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [profileError, setProfileError] = useState<ProfileError | null>(null);
 
   useEffect(() => {
+    if (envConfig.isDemoMode) {
+      // Mode démo : simuler un utilisateur
+      console.log('🎭 Mode démo activé - Simulation d\'utilisateur');
+      setLoading(true);
+      
+      setTimeout(() => {
+        const demoUser = {
+          id: 'demo-user-123',
+          email: 'demo@montoit.ci',
+          user_metadata: { 
+            full_name: 'Utilisateur Démo',
+            user_type: 'locataire'
+          }
+        } as User;
+        
+        const demoSession = {
+          user: demoUser,
+          access_token: 'demo-token',
+          refresh_token: 'demo-refresh',
+          expires_at: Date.now() + (24 * 60 * 60 * 1000) // 24h
+        } as Session;
+        
+        setUser(demoUser);
+        setSession(demoSession);
+        setLoading(false);
+        
+        // Charger un profil démo
+        setProfile({
+          id: 'demo-user-123',
+          email: 'demo@montoit.ci',
+          full_name: 'Utilisateur Démo',
+          user_type: 'locataire',
+          phone: '+225 XX XX XX XX',
+          created_at: new Date().toISOString(),
+          updated_at: new Date().toISOString()
+        });
+        
+        console.log('✅ Utilisateur démo initialisé');
+      }, 1500);
+      
+      return;
+    }
+
+    // Mode production normal
     supabase.auth.getSession().then(({ data: { session } }) => {
       setSession(session);
       setUser(session?.user ?? null);
@@ -68,6 +113,11 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const loadProfile = async (userId: string, retryCount = 0) => {
     const MAX_RETRIES = 5;
     const RETRY_DELAY = 1500;
+
+    // Skip loading in demo mode - profile is already set
+    if (envConfig.isDemoMode) {
+      return;
+    }
 
     try {
       logger.debug('Loading user profile', { userId, attempt: retryCount + 1, maxRetries: MAX_RETRIES + 1 });
@@ -214,6 +264,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   };
 
   const signIn = async (email: string, password: string) => {
+    if (envConfig.isDemoMode) {
+      // Mode démo : toujours réussir avec un message
+      console.log('🎭 Mode démo - Connexion simulée');
+      return { 
+        error: { 
+          message: 'Mode démo : Connectez-vous en mode production pour une vraie authentification',
+          status: 200
+        } as AuthError 
+      };
+    }
+    
     const { error } = await supabase.auth.signInWithPassword({
       email,
       password,
@@ -222,6 +283,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   };
 
   const signUp = async (email: string, password: string, userData: { full_name: string; user_type?: string; phone?: string }) => {
+    if (envConfig.isDemoMode) {
+      console.log('🎭 Mode démo - Inscription simulée');
+      return { 
+        error: { 
+          message: 'Mode démo : Inscrivez-vous en mode production pour créer un vrai compte',
+          status: 200
+        } as AuthError 
+      };
+    }
+    
     try {
       const { data, error } = await supabase.auth.signUp({
         email,
@@ -249,6 +320,16 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   };
 
   const signInWithProvider = async (provider: Provider) => {
+    if (envConfig.isDemoMode) {
+      console.log('🎭 Mode démo - OAuth simulé');
+      return { 
+        error: { 
+          message: 'Mode démo : Utilisez l\'authentification en mode production',
+          status: 200
+        } as AuthError 
+      };
+    }
+    
     try {
       const { error } = await supabase.auth.signInWithOAuth({
         provider,
@@ -267,6 +348,14 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   };
 
   const signOut = async () => {
+    if (envConfig.isDemoMode) {
+      console.log('🎭 Mode démo - Déconnexion simulée');
+      setUser(null);
+      setProfile(null);
+      setSession(null);
+      return;
+    }
+    
     await supabase.auth.signOut();
     setUser(null);
     setProfile(null);
@@ -275,6 +364,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   const updateProfile = async (updates: Partial<Profile>) => {
     if (!user) return;
+
+    if (envConfig.isDemoMode) {
+      console.log('🎭 Mode démo - Mise à jour du profil simulée');
+      // Simuler une mise à jour réussie
+      if (profile) {
+        setProfile({ ...profile, ...updates });
+      }
+      return;
+    }
 
     const { error } = await supabase
       .from('profiles')
@@ -286,6 +384,17 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   };
 
   const resetPassword = async (email: string) => {
+    if (envConfig.isDemoMode) {
+      console.log('🎭 Mode démo - Réinitialisation mot de passe simulée');
+      return {
+        error: {
+          message: 'Mode démo : Utilisez la réinitialisation en mode production',
+          status: 200,
+          name: 'AuthError'
+        } as AuthError
+      };
+    }
+    
     try {
       const { data, error: functionError } = await supabase.functions.invoke('send-password-reset', {
         body: { email }

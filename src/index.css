@@ -7,7 +7,8 @@
 
 @layer base {
   body {
-    @apply font-body bg-background-surface;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: var(--color-background-surface);
   }
 
   * {
@@ -25,23 +26,77 @@
   }
 
   .btn-primary {
-    @apply bg-primary-500 text-white font-semibold px-6 py-3 rounded-xl shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300;
+    background-color: var(--color-primary-500);
+    color: #FFFFFF;
+    font-weight: var(--font-weight-semibold);
+    padding: var(--spacing-3) var(--spacing-6);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: all var(--animation-duration-base) var(--animation-easing-ease-out);
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn-primary:hover {
+    box-shadow: var(--shadow-lg);
+    transform: scale(1.05);
+    background-color: var(--color-primary-700);
   }
 
   .btn-secondary {
-    @apply bg-white border-2 border-primary-500 text-primary-500 font-semibold px-6 py-3 rounded-xl hover:bg-primary-50 transform hover:scale-105 transition-all duration-300;
+    background-color: #FFFFFF;
+    border: 2px solid var(--color-primary-500);
+    color: var(--color-primary-500);
+    font-weight: var(--font-weight-semibold);
+    padding: var(--spacing-3) var(--spacing-6);
+    border-radius: var(--border-radius-lg);
+    background-color: rgba(255, 107, 47, 0.05);
+    transition: all var(--animation-duration-base) var(--animation-easing-ease-out);
+    cursor: pointer;
+  }
+
+  .btn-secondary:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 107, 47, 0.1);
   }
 
   .card-scrapbook {
-    @apply bg-white rounded-lg shadow-card hover:shadow-card-hover transition-all duration-500 transform hover:-rotate-1 hover:scale-105;
+    background-color: var(--color-background-page);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-base);
+    transition: all 500ms var(--animation-easing-ease-out);
+    cursor: pointer;
+  }
+
+  .card-scrapbook:hover {
+    box-shadow: var(--shadow-xl);
+    transform: rotate(-1deg) scale(1.05);
   }
 
   .text-gradient {
-    @apply bg-gradient-to-r from-primary-500 to-primary-700 bg-clip-text text-transparent;
+    background: linear-gradient(to right, var(--color-primary-500), var(--color-primary-700));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
   .badge-glow {
-    @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold animate-glow;
+    display: inline-flex;
+    align-items: center;
+    padding: var(--spacing-1) var(--spacing-3);
+    border-radius: var(--border-radius-full);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 5px var(--color-primary-500);
+    }
+    to {
+      box-shadow: 0 0 20px var(--color-primary-500), 0 0 30px var(--color-primary-500);
+    }
   }
 }
 
