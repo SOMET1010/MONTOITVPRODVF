@@ -16,6 +16,8 @@ export default function PropertyCard({ property, showBadge, badgeText }: Propert
       href={`/propriete/${property.id}`}
       className="group block w-full sm:w-80 flex-shrink-0 card-premium hover-lift touch-manipulation"
       style={{ minHeight: '44px' }}
+      role="article"
+      aria-label={`Voir les détails de ${property.title} à ${property.city}, ${property.neighborhood}`}
     >
       {/* Image */}
       <div className="relative h-64 sm:h-72 bg-gray-200 rounded-xl overflow-hidden mb-3 image-zoom shadow-premium group-hover:shadow-premium-hover transition-shadow duration-300">
