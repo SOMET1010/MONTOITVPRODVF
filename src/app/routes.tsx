@@ -85,6 +85,11 @@ const TrustAgentModeration = lazy(() => import('@/features/trust-agent/pages/Mod
 const TrustAgentMediation = lazy(() => import('@/features/trust-agent/pages/MediationPage'));
 const TrustAgentAnalytics = lazy(() => import('@/features/trust-agent/pages/AnalyticsPage'));
 
+// Analytics
+const AdminAnalytics = lazy(() => import('@/features/analytics/pages/AdminAnalyticsPage'));
+const OwnerAnalytics = lazy(() => import('@/features/analytics/pages/OwnerAnalyticsPage'));
+const MarketAnalytics = lazy(() => import('@/features/analytics/pages/MarketAnalyticsPage'));
+
 const NotificationPreferences = lazy(() => import('@/features/messaging/pages/NotificationPreferencesPage'));
 const NotificationsPage = lazy(() => import('@/features/messaging/pages/NotificationsPage'));
 const MyDisputes = lazy(() => import('@/features/dispute/pages/MyDisputesPage'));
@@ -386,6 +391,14 @@ export const routes: RouteObject[] = [
         ),
       },
       {
+        path: 'dashboard/proprietaire/analytics',
+        element: (
+          <ProtectedRoute allowedRoles={['proprietaire', 'agence']}>
+            <OwnerAnalytics />
+          </ProtectedRoute>
+        ),
+      },
+      {
         path: 'dashboard/ajouter-propriete',
         element: (
           <ProtectedRoute allowedRoles={['proprietaire', 'agence']}>
@@ -574,6 +587,30 @@ export const routes: RouteObject[] = [
         element: (
           <ProtectedRoute allowedRoles={['admin']}>
             <AdminTrustAgents />
+          </ProtectedRoute>
+        ),
+      },
+      {
+        path: 'admin/analytics',
+        element: (
+          <ProtectedRoute allowedRoles={['admin']}>
+            <AdminAnalytics />
+          </ProtectedRoute>
+        ),
+      },
+      {
+        path: 'admin/market-analytics',
+        element: (
+          <ProtectedRoute allowedRoles={['admin']}>
+            <MarketAnalytics />
+          </ProtectedRoute>
+        ),
+      },
+      {
+        path: 'market-analytics',
+        element: (
+          <ProtectedRoute>
+            <MarketAnalytics />
           </ProtectedRoute>
         ),
       },
