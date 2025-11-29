@@ -3,31 +3,10 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "🚀 EXÉCUTION: Test complet du système MONTOIT",
-        "details": "✅ **TEST COMPLET TERMINÉ** - 5 JOURS, 19 TESTS, 16 RAPPORTS DÉTAILLÉS\n\n**RÉSULTATS GLOBAUX:**\n• Tests critiques: 4.7/10 (auth 3/10, navigation 4.7/10)\n• Tests fonctionnels: 5.3/10 (profils 6/10, BDD 4.5/10)\n• Tests intégrations: 8.1/10 (Supabase 9.7/10, architecture 8.7/10)\n• Tests techniques: 7.5/10 (performance 8.5/10, sécurité 6.5/10)\n• Tests validation: 7.3/10 (erreurs 7.8/10, SEO 7.3/10)\n\n**SCORE GLOBAL FINAL: 6.2/10**\n\n**VERDICT: NON RECOMMANDÉ POUR PRODUCTION**\n\n**RAPPORT FINAL:** RAPPORT_FINAL_TEST_COMPLET_MONTOIT.md (219 lignes)\n**RECOMMANDATION:** Corrections urgentes requises (authentification, navigation, sécurité)",
-        "status": "completed",
+        "content": "🎨 AUDIT UI/UX COMPLET - Cohérence design MONTOIT",
+        "details": "**PROBLÈME IDENTIFIÉ:**\n• Plusieurs couches de design sans identité claire\n• Couleurs incohérentes d'une page à l'autre  \n• Formulaires avec superpositions problématiques\n• Expérience utilisateur accablante\n\n**MISSION:**\n1. Audit UI/UX de toutes les pages\n2. Identification des problèmes de cohérence\n3. Proposition de solution (refresh/refonte)\n4. Harmonisation de l'identité visuelle\n5. Guide de design system cohérent",
+        "status": "in_progress",
         "priority": "high"
-      },
-      "2": {
-        "id": "2",
-        "content": "🔧 PHASE 2: Tester les modules importants",
-        "details": "1. Maintenance (2 pages) - demandes, suivi temps réel\n2. Communication (2 pages) - messagerie chiffrée, notifications\n3. Litiges & Médiation (3 pages) - création litiges, médiation\n4. Administration (12 pages) - feature flags, gestion utilisateurs\n5. Analytics & Reporting (4 pages) - dashboards, rapports automatiques",
-        "status": "pending",
-        "priority": "medium"
-      },
-      "3": {
-        "id": "3",
-        "content": "🎭 PHASE 3: Parcours utilisateur complet",
-        "details": "1. Parcours LOCATAIRE: Inscription → Recherche → Candidature → Signature → Paiement\n2. Parcours PROPRIÉTAIRE: Publication → Gestion → Paiement → Maintenance\n3. Parcours TIERS: Validation → Médiation → Rapports\n4. Parcours ADMIN: Configuration → Monitoring → Analytics",
-        "status": "pending",
-        "priority": "medium"
-      },
-      "4": {
-        "id": "4",
-        "content": "🔌 PHASE 4: Tests d'intégration et performance",
-        "details": "1. Tester les 15 services externes un par un\n2. Workflows bout-en-bout complets\n3. Tests performance (bundle size, Lighthouse >90)\n4. Vérification responsive design\n5. Tests de sécurité (authentification, chiffrement)",
-        "status": "pending",
-        "priority": "low"
       }
     }
   }
