@@ -3,9 +3,37 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "🎨 AUDIT UI/UX COMPLET - Cohérence design MONTOIT",
-        "details": "**PROBLÈME IDENTIFIÉ:**\n• Plusieurs couches de design sans identité claire\n• Couleurs incohérentes d'une page à l'autre  \n• Formulaires avec superpositions problématiques\n• Expérience utilisateur accablante\n\n**MISSION:**\n1. Audit UI/UX de toutes les pages\n2. Identification des problèmes de cohérence\n3. Proposition de solution (refresh/refonte)\n4. Harmonisation de l'identité visuelle\n5. Guide de design system cohérent",
-        "status": "in_progress",
+        "content": "Sprint 1 (Semaine 1) - Corrections Critiques",
+        "details": "Jour 1-2: Page Inscription (fixer superposition, corriger placeholders)\nJour 3-4: Page Recherche (standardiser cards, supprimer overlay BIDJAN)\nJour 5: Page Accueil (remplacer chiffres 0+ par vrais chiffres)\nObjectif: Site sans problèmes critiques d'UX",
+        "status": "completed",
+        "priority": "high"
+      },
+      "2": {
+        "id": "2",
+        "content": "Sprint 2 (Semaine 2) - Design System Base",
+        "details": "Jour 1-2: Palette couleurs unifiée + boutons standardisés\nJour 3-4: Typographie + espacement (4pt grid)\nJour 5: Footer unifié sur toutes pages\nObjectif: Design system documenté + appliqué",
+        "status": "completed",
+        "priority": "high"
+      },
+      "3": {
+        "id": "3",
+        "content": "Sprint 3 (Semaine 3) - Navigation & Composants",
+        "details": "Jour 1-2: Navigation + filtres unifiés\nJour 3-5: Composants réutilisables + iconographie\nObjectif: Composants standardisés + navigation cohérente",
+        "status": "completed",
+        "priority": "medium"
+      },
+      "4": {
+        "id": "4",
+        "content": "Sprint 4 (Semaine 4) - Polish & QA",
+        "details": "Jour 1-2: Accessibilité WCAG AA\nJour 3-4: Responsive + performance\nJour 5: QA finale + tests utilisateurs\nObjectif: Site harmonisé, accessible, documenté",
+        "status": "completed",
+        "priority": "medium"
+      },
+      "5": {
+        "id": "5",
+        "content": "Implémentation Design Tokens",
+        "details": "Intégrer design-tokens.json comme référence centrale\nAppliquer 100+ tokens sur tous les composants\nCréer système de variables CSS/SCSS",
+        "status": "completed",
         "priority": "high"
       }
     }
