@@ -1,5 +1,5 @@
 {
-  "_source_id": 29,
+  "_source_id": 42,
   "sources": {
     "Cahier des Charges Technique - Nouvelles Fonctionnalités": {
       "https://supabase.com/docs/guides/getting-started/architecture": {
@@ -210,6 +210,101 @@
         "url": "https://garantme.fr/fr/blog/agent/marche-immobilier-une-lente-transformation-digitale",
         "title": "Marché immobilier : une lente transformation digitale",
         "info": "Freins transformation digitale : 36% agences <1 an adoption, obstacles financiers/culturels/organisationnels, solutions formation/accompagnement"
+      }
+    },
+    "Gaps Fonctionnels MONTOIT": {
+      "https://www.montoit-immobilier.fr/": {
+        "id": 30,
+        "publisher": "Montoit Immobilier",
+        "url": "https://www.montoit-immobilier.fr/",
+        "title": "Services et fonctionnalités digitales de l'agence",
+        "info": "Informations sur les services de Montoit Immobilier Thiais : vente, location, estimation, gestion locative, outils numériques, services de financement"
+      },
+      "https://www.montoit-immobilier.eu/": {
+        "id": 31,
+        "publisher": "Montoit Immobilier",
+        "url": "https://www.montoit-immobilier.eu/",
+        "title": "Services de construction et promotion",
+        "info": "Positionnement de Montoit comme constructeur et promoteur : maisons sur mesure, promotion immobilière haut de gamme, expertise depuis 40 ans"
+      },
+      "https://www.telescop.com/proptech-les-startups-immobilieres-a-suivre/": {
+        "id": 32,
+        "publisher": "Telescop",
+        "url": "https://www.telescop.com/proptech-les-startups-immobilieres-a-suivre/",
+        "title": "PropTech : les startups immobilières à suivre en 2024",
+        "info": "Analyse des startups PropTech leaders 2024 : Telescop, Masteos, Sezame, Homeloop, Cocoon-immo avec leurs innovations et technologies"
+      },
+      "https://www.proptechbuzz.com/blog/top-proptech-start-ups-in-france": {
+        "id": 33,
+        "publisher": "PropTechBuzz",
+        "url": "https://www.proptechbuzz.com/blog/top-proptech-start-ups-in-france",
+        "title": "Top PropTech Start-Ups in France",
+        "info": "Top 10 startups PropTech françaises : Colonies, Finalcad, Studapart, Deepki, Liberkeys, PriceHubble, SAFTI, Pretto, Luko, Jinka avec innovations et financement"
+      },
+      "https://www.fidesio.com/quelle-approche-ux-ui-pour-les-sites-immobiliers": {
+        "id": 34,
+        "publisher": "Fidesio",
+        "url": "https://www.fidesio.com/quelle-approche-ux-ui-pour-les-sites-immobiliers",
+        "title": "Approche UX/UI pour les sites immobiliers",
+        "info": "Standards UX/UI immobiliers : navigation intuitive, recherche avancée, CTA optimisés, micro-interactions, contenus de qualité, accessibilité mobile"
+      },
+      "https://data-b.com/actu/utiliser-lia-dans-limmobilier-revolution-et-opportunites-en-2024/": {
+        "id": 35,
+        "publisher": "Data-B",
+        "url": "https://data-b.com/actu/utiliser-lia-dans-limmobilier-revolution-et-opportunites-en-2024/",
+        "title": "Utiliser l'IA dans l'immobilier : révolution et opportunités en 2024",
+        "info": "Technologies émergentes en PropTech 2024 : IA (valeur 7,56 milliards €), blockchain, IoT, réalité virtuelle, applications concrètes et cas d'usage"
+      }
+    },
+    "Analyse Besoins Utilisateurs MONTOIT": {
+      "https://www.montoit-immobilier.fr/": {
+        "id": 36,
+        "publisher": "Montoit Immobilier",
+        "url": "https://www.montoit-immobilier.fr/",
+        "title": "Montoit Immobilier - Agence immobilière Thiais",
+        "info": "Services complets : vente, location, estimation, gestion immobilière avec outils de recherche avancés, espace propriétaire, alertes email et expertise locale"
+      },
+      "https://www.montoit-immobilier.eu/": {
+        "id": 37,
+        "publisher": "Montoit Immobilier",
+        "url": "https://www.montoit-immobilier.eu/",
+        "title": "Montoit Immobilier - Constructions & Promotions",
+        "info": "Spécialisé dans la construction sur mesure et promotion immobilière haut de gamme depuis 40+ ans avec savoir-faire artisanal"
+      },
+      "https://leboncoinsolutionspro.fr/immobilier/": {
+        "id": 38,
+        "publisher": "Leboncoin",
+        "url": "https://leboncoinsolutionspro.fr/immobilier/",
+        "title": "Immobilier - Leboncoin Solutions Pro",
+        "info": "66% des Français avec projet immobilier utilisent Leboncoin, 42% exclusivement, 75% des clients jugent que c'est le portail le plus efficace pour vendre"
+      },
+      "https://www.pap.fr/": {
+        "id": 39,
+        "publisher": "PAP",
+        "url": "https://www.pap.fr/",
+        "title": "PAP - Immobilier entre particuliers",
+        "info": "50 ans d'expérience, 0% commission, 3 millions visiteurs/mois, 350 000 clients/an, note 4.6/5 sur Trustpilot"
+      },
+      "https://fr.trustpilot.com/review/www.seloger.com": {
+        "id": 40,
+        "publisher": "Trustpilot",
+        "url": "https://fr.trustpilot.com/review/www.seloger.com",
+        "title": "Avis SeLoger sur Trustpilot",
+        "info": "64% d'avis 1 étoile, problèmes majeurs : annonces frauduleuses, modération défaillante, service client difficile, bugs techniques, estimations peu fiables"
+      },
+      "https://fr.trustpilot.com/review/www.leboncoin.fr": {
+        "id": 41,
+        "publisher": "Trustpilot",
+        "url": "https://fr.trustpilot.com/review/www.leboncoin.fr",
+        "title": "Avis Leboncoin sur Trustpilot",
+        "info": "Note 4.5/5 excellente mais problèmes : frais de gestion, système de blocage inefficace, annonces périmées, fraude, manque d'intuitivité"
+      },
+      "https://brainboxai.com/fr/articles/5-tendances-en-intelligence-artificielle-pour-l-immobilier-en-2024": {
+        "id": 42,
+        "publisher": "BrainBoxAI",
+        "url": "https://brainboxai.com/fr/articles/5-tendances-en-intelligence-artificielle-pour-l-immobilier-en-2024",
+        "title": "5 tendances IA immobilier 2024",
+        "info": "Tendances clés : IA générative pour décisions d'investissement, bâtiments intelligents, durabilité, gestion installations, personnalisation espaces"
       }
     }
   }
