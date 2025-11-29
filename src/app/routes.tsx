@@ -97,6 +97,8 @@ const HelpPage = lazy(() => import('@/features/auth/pages/HelpPage'));
 const FAQPage = lazy(() => import('@/features/auth/pages/FAQPage'));
 const HowItWorksPage = lazy(() => import('@/features/auth/pages/HowItWorksPage'));
 
+const UserDashboard = lazy(() => import('@/features/dashboard/pages/DashboardPage'));
+
 export const routes: RouteObject[] = [
   {
     path: '/',
@@ -135,6 +137,14 @@ export const routes: RouteObject[] = [
         element: (
           <ProtectedRoute>
             <Profile />
+          </ProtectedRoute>
+        ),
+      },
+      {
+        path: 'dashboard',
+        element: (
+          <ProtectedRoute>
+            <UserDashboard />
           </ProtectedRoute>
         ),
       },

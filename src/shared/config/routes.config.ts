@@ -22,6 +22,7 @@ export const ROUTES = {
   COMMON: {
     PROFILE: '/profil',
     PROFILE_SELECTION: '/selection-profil',
+    DASHBOARD: '/dashboard',
     MESSAGES: '/messages',
     ABOUT: '/a-propos',
     PRIVACY: '/politique-confidentialite',
