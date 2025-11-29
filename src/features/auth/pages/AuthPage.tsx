@@ -302,8 +302,8 @@ export default function Auth() {
       <div className="absolute bottom-20 left-20 text-white/30 transform -rotate-12 text-7xl font-bold animate-bounce-subtle">♥</div>
 
       <div className="max-w-6xl w-full relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div className="hidden lg:block text-white space-y-8 animate-slide-down">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 items-center">
+          <div className="hidden lg:block text-white space-y-8 animate-slide-down col-span-3">
             <div className="flex items-center space-x-4">
               <img
                 src="/logo.png"
@@ -354,7 +354,7 @@ export default function Auth() {
             </div>
           </div>
 
-          <div className="animate-scale-in">
+          <div className="animate-scale-in col-span-2">
             <div className="glass-card rounded-3xl p-8 md:p-10 shadow-2xl transform hover:scale-105 transition-all duration-300">
               <div className="lg:hidden flex justify-center mb-6">
                 <div className="flex items-center space-x-3">

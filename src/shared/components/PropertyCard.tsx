@@ -65,13 +65,25 @@ export default function PropertyCard({ property, showBadge, badgeText }: Propert
           {property.title}
         </p>
 
-        <p className="text-gray-600 text-xs sm:text-sm">
-          {property.bedrooms && `${property.bedrooms} ch.`}
-          {property.bedrooms && property.bathrooms && ' · '}
-          {property.bathrooms && `${property.bathrooms} sdb.`}
-          {(property.bedrooms || property.bathrooms) && property.surface_area && ' · '}
-          {property.surface_area && `${property.surface_area} m²`}
-        </p>
+        <div className="text-gray-600 text-xs sm:text-sm flex items-center gap-3">
+          {/* Chambres - TOUJOURS afficher */}
+          <span className="flex items-center gap-1">
+            <span className="text-primary-500">🛏</span>
+            <span>{property.bedrooms ? `${property.bedrooms} ch.` : '-'}</span>
+          </span>
+          
+          {/* Salles de bain - TOUJOURS afficher */}
+          <span className="flex items-center gap-1">
+            <span className="text-primary-500">🚿</span>
+            <span>{property.bathrooms ? `${property.bathrooms} sdb.` : '-'}</span>
+          </span>
+          
+          {/* Superficie - TOUJOURS afficher en m² */}
+          <span className="flex items-center gap-1">
+            <span className="text-primary-500">📐</span>
+            <span>{property.surface_area ? `${property.surface_area} m²` : '-'}</span>
+          </span>
+        </div>
       </div>
     </a>
   );
