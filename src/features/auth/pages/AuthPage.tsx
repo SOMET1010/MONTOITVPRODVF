@@ -355,7 +355,7 @@ export default function Auth() {
           </div>
 
           <div className="animate-scale-in col-span-2">
-            <div className="glass-card rounded-3xl p-8 md:p-10 shadow-2xl transform hover:scale-105 transition-all duration-300">
+            <div className="glass-card rounded-2xl p-6 md:p-8 shadow-2xl transform hover:scale-105 transition-all duration-300 max-w-md mx-auto">
               <div className="lg:hidden flex justify-center mb-6">
                 <div className="flex items-center space-x-3">
                   <img

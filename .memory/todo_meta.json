@@ -3,38 +3,31 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "Analyser l'état actuel du design premium MonToit",
-        "details": "Vérifier l'application des spécifications Modern Minimalism Premium vs l'implémentation actuelle",
+        "content": "Corriger la page d'inscription - Problème de superposition critique",
+        "details": "Selon l'audit: Layout 60/40 cassé, contenu coupé par coins arrondis. Corriger: Option A (réduire largeur formulaire) ou Option B (supprimer coins arrondis). Plus corriger placeholders ('otre' → 'Votre').",
         "status": "completed",
         "priority": "high"
       },
       "2": {
         "id": "2",
-        "content": "Corriger la configuration Tailwind pour le design premium",
-        "details": "1. Ajouter les tokens de couleurs manquants (background-page, background-surface, etc.) 2. Définir les tailles de police selon les spécifications (text-h1, text-h2, text-body, etc.) 3. Corriger les classes de police et d'espacement",
+        "content": "Corriger les Cards propriétés - Données manquantes aléatoires",
+        "details": "Template uniforme pour toutes les cards (toujours 3 icônes: chambres/SDB/surface). Utiliser '-' pour valeurs manquantes. Corriger unités de mesure (30m → 30 m²). Supprimer overlay 'BIDJAN NEIGHBORHOODS'.",
         "status": "completed",
         "priority": "high"
       },
       "3": {
         "id": "3",
-        "content": "Refonte des composants UI critiques",
-        "details": "1. Corriger Button.tsx pour utiliser les variables CSS correctes 2. Refonte Card.tsx selon les spécifications premium 3. Harmoniser tous les composants avec les tokens de design",
+        "content": "Corriger la section statistiques - Chiffres '0+' non crédibles",
+        "details": "Soit afficher vraies données avec compteur animé, soit supprimer la section complètement. Estimer: 31+ propriétés, 500+ utilisateurs, 3 villes.",
         "status": "completed",
-        "priority": "high"
+        "priority": "medium"
       },
       "4": {
         "id": "4",
-        "content": "Mise à jour du fichier index.css",
-        "details": "1. Corriger les classes utilitaires pour utiliser les variables CSS du design-system 2. Supprimer les conflits avec les composants 3. Optimiser les animations selon les spécifications",
+        "content": "Valider les corrections et déployer",
+        "details": "Tester toutes les corrections: page inscription, cards propriétés, section chiffres. Vérifier accessibilité et responsive. Déployer vers production.",
         "status": "completed",
-        "priority": "medium"
-      },
-      "5": {
-        "id": "5",
-        "content": "Validation et test de l'interface refondée",
-        "details": "1. Vérifier l'application correcte des tokens de design premium 2. Tester les contrastes WCAG AAA 3. Valider l'harmonie visuelle et les espacements",
-        "status": "completed",
-        "priority": "medium"
+        "priority": "high"
       }
     }
   }
