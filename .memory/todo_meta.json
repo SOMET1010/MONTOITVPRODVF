@@ -1,11 +1,60 @@
 {
   "todos": {
     "Coordinator": {
+      "1": {
+        "id": "1",
+        "content": "Analyse et Audit de l'Existant",
+        "details": "1. Examiner la structure actuelle de MONTOITVPROD\n2. Identifier les composants et pages existants\n3. Analyser les corrections déjà appliquées\n4. Évaluer l'architecture technique actuelle",
+        "status": "completed",
+        "priority": "high"
+      },
+      "2": {
+        "id": "2",
+        "content": "Phase 1 - Design System et Foundation",
+        "details": "1. Implémenter les design tokens JSON\n2. Créer la configuration CSS du design system\n3. Développer les composants de base (Button, Input, Card, etc.)\n4. Établir la grille et les espacements\n5. Configurer les breakpoints responsive",
+        "status": "pending",
+        "priority": "high"
+      },
+      "3": {
+        "id": "3",
+        "content": "Phase 2 - Refonte Pages Critiques",
+        "details": "1. Refonte Homepage avec Hero simplifié\n2. Refonte SearchPropertiesPage avec nouvelle interface\n3. Refonte PropertyDetailPage avec galerie moderne\n4. Mise à jour Navigation (Header/Footer)\n5. Implémentation des patterns de design critiques",
+        "status": "pending",
+        "priority": "high"
+      },
+      "4": {
+        "id": "4",
+        "content": "Phase 3 - Dashboards Utilisateurs",
+        "details": "1. Refonte Tenant Dashboard\n2. Refonte Owner Dashboard  \n3. Refonte Agency Dashboard\n4. Refonte Admin Dashboard\n5. Refonte Trust Agent Dashboard\n6. Harmonisation des composants dashboard",
+        "status": "pending",
+        "priority": "medium"
+      },
+      "5": {
+        "id": "5",
+        "content": "Phase 4 - Features Transactionnelles",
+        "details": "1. Refonte système de candidature\n2. Refonte système de paiement\n3. Refonte gestion des contrats\n4. Refonte système de messagerie\n5. Refonte gestion des litiges",
+        "status": "pending",
+        "priority": "medium"
+      },
+      "6": {
+        "id": "6",
+        "content": "Phase 5 - Pages Informationnelles",
+        "details": "1. Refonte pages About, Contact, Help, FAQ\n2. Mise à jour pages légales (Privacy, Terms)\n3. Harmonisation du contenu avec le nouveau design\n4. Optimisation SEO et accessibilité",
+        "status": "pending",
+        "priority": "low"
+      },
       "7": {
         "id": "7",
-        "content": "REFONTE COMPLÈTE INTERFACE MONTOITVPROD",
-        "details": "Transformer toute la plateforme d'une 'anarchie visuelle' en interface Modern Minimalism Premium. Créer une refonte complète incluant : Hero Section, Navigation, Pages internes (Dashboard, Properties, Search, Profile), Composants UI, Système de design cohérent. Éliminer tous les problèmes visuels actuels (chevauchements, contrastes défaillants, hiérarchie cassée, éléments coupés, alignements défaillants). Implémenter les spécifications de design créées par le web designer.",
-        "status": "in_progress",
+        "content": "Phase 6 - Optimisation et Tests",
+        "details": "1. Tests d'accessibilité WCAG AA/AAA\n2. Tests de performance et optimisation\n3. Tests responsive sur tous devices\n4. Tests fonctionnels end-to-end\n5. Corrections finales et polish",
+        "status": "pending",
+        "priority": "medium"
+      },
+      "8": {
+        "id": "8",
+        "content": "Phase 7 - Déploiement et Livraison",
+        "details": "1. Build de production optimisé\n2. Configuration CI/CD mise à jour\n3. Déploiement sur environnement staging\n4. Tests de déploiement production\n5. Livraison finale avec documentation",
+        "status": "pending",
         "priority": "high"
       }
     }
