@@ -21,34 +21,52 @@ export function Card({
 }: CardProps) {
   const isInteractive = hoverable || clickable;
   
+  // Variants selon spécifications Modern Minimalism Premium
   const variantClasses = {
-    default: 'bg-background-page',
-    bordered: 'bg-background-page border border-neutral-100',
-    elevated: 'bg-background-page shadow-lg',
-    interactive: 'bg-background-page border border-neutral-100 shadow-base hover:shadow-lg',
+    default: [
+      'bg-background-surface', // #FAFAFA selon tokens
+      'border border-neutral-200'
+    ],
+    bordered: [
+      'bg-background-page',     // #FFFFFF selon tokens
+      'border border-neutral-200'
+    ],
+    elevated: [
+      'bg-background-page',     // #FFFFFF selon tokens  
+      'shadow-lg',
+    ],
+    interactive: [
+      'bg-background-surface', // #FAFAFA selon tokens
+      'border border-neutral-200',
+      'shadow-base',
+      'hover:shadow-md',
+      'cursor-default'
+    ],
   };
 
-  // Padding minimum de 32px (spacing-8) selon les spécifications
+  // Padding minimum de 32px (spacing-8) selon les spécifications premium
   const paddingClasses = {
     none: '',
-    sm: 'p-4',
-    md: 'p-8', // Minimum 32px
-    lg: 'p-12', // 48px
-    xl: 'p-16', // 64px
+    sm: 'p-4',      // 16px - Éléments proches
+    md: 'p-8',      // 32px - MINIMUM selon spécifications
+    lg: 'p-12',     // 48px - Card padding premium
+    xl: 'p-16',     // 64px - Sections importantes
   };
 
+  // Animations selon spécifications (GPU-only : transform + opacity)
   const interactionClasses = isInteractive ? [
-    'transition-fast',
-    'ease-out',
-    'cursor-default'
+    'transition-base ease-out', // 250ms ease-out selon tokens
+    'will-change-transform'
   ].join(' ') : '';
 
+  // Hover states selon spécifications Modern Minimalism Premium
   const hoverClasses = hoverable ? [
     'hover:-translate-y-1',
-    'hover:scale-101',
-    'active:scale-99'
+    'hover:scale-[1.02]',
+    'active:scale-[0.99]'
   ].join(' ') : '';
 
+  // Click states pour accessibilité
   const clickClasses = clickable ? [
     'cursor-pointer',
     'focus:outline-none',
@@ -59,9 +77,10 @@ export function Card({
   ].join(' ') : '';
 
   const classes = [
-    'rounded-md',
+    // Base selon spécifications premium
+    'rounded-lg',          // 16px radius selon tokens
     'relative',
-    variantClasses[variant],
+    ...variantClasses[variant],
     paddingClasses[padding],
     interactionClasses,
     hoverClasses,
@@ -88,8 +107,11 @@ export function Card({
       {/* Indicateur visuel pour les éléments cliquables */}
       {clickable && (
         <div 
-          className="absolute inset-0 rounded-md opacity-0 hover:opacity-100 focus:opacity-100 transition-opacity"
+          className="absolute inset-0 rounded-lg opacity-0 hover:opacity-100 focus:opacity-100 transition-base"
           aria-hidden="true"
+          style={{
+            background: 'linear-gradient(to bottom right, rgba(255, 108, 47, 0.05), rgba(255, 108, 47, 0.1))'
+          }}
         />
       )}
     </CardWrapper>
@@ -124,22 +146,21 @@ export function CardHeader({
       <div className="flex-1 min-w-0">
         {title && (
           <h3 className={[
-            'text-h5',
-            'font-semibold',
-            'text-neutral-900',
-            'leading-heading',
-            'tracking-tight',
-            'mb-2'
+            'text-h3',                // 24px selon tokens premium
+            'font-semibold',          // 600 selon tokens premium
+            'text-neutral-900',       // #171717 - contraste AAA 16.5:1
+            'leading-heading',        // 1.3 selon tokens premium
+            'mb-2'                   // 8px spacing
           ].join(' ')}>
             {title}
           </h3>
         )}
         {subtitle && (
           <p className={[
-            'text-small',
-            'font-regular',
-            'text-neutral-700',
-            'leading-body'
+            'text-sm',               // 14px selon tokens premium
+            'font-regular',          // 400 selon tokens premium
+            'text-neutral-700',      // #404040 - contraste AAA 8.6:1
+            'leading-body'           // 1.5 selon tokens premium
           ].join(' ')}>
             {subtitle}
           </p>
@@ -190,11 +211,10 @@ export function CardTitle({
   return (
     <h3 
       className={[
-        'text-h5',
-        'font-semibold',
-        'text-neutral-900',
-        'leading-heading',
-        'tracking-tight',
+        'text-h3',               // 24px selon tokens premium
+        'font-semibold',         // 600 selon tokens premium
+        'text-neutral-900',      // #171717 - contraste AAA 16.5:1
+        'leading-heading',       // 1.3 selon tokens premium
         className
       ].join(' ')} 
       {...props}
@@ -214,11 +234,11 @@ export function CardDescription({
   return (
     <p 
       className={[
-        'text-small',
-        'font-regular',
-        'text-neutral-700',
-        'leading-body',
-        'mt-2',
+        'text-sm',               // 14px selon tokens premium
+        'font-regular',          // 400 selon tokens premium
+        'text-neutral-700',      // #404040 - contraste AAA 8.6:1
+        'leading-body',          // 1.5 selon tokens premium
+        'mt-2',                  // 8px margin-top
         className
       ].join(' ')} 
       {...props}
@@ -250,11 +270,11 @@ export function CardFooter({
       className={[
         'flex',
         'items-center',
-        'gap-3',
-        'pt-6',
-        'mt-6',
-        'border-t',
-        'border-neutral-100',
+        'gap-3',               // 12px gap selon tokens premium
+        'pt-6',                // 24px padding-top
+        'mt-6',                // 24px margin-top
+        'border-t',            // Top border
+        'border-neutral-200',  // Couleur border selon tokens
         'flex-shrink-0',
         alignClasses[align],
         className

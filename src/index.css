@@ -32,54 +32,60 @@
     @apply bg-white/70 backdrop-blur-xl border border-white/20 shadow-xl;
   }
 
+  /* Boutons Premium - Modern Minimalism Design */
   .btn-primary {
-    background-color: var(--button-primary-bg);
-    color: var(--button-primary-color);
-    font-weight: var(--button-primary-font-weight);
+    background-color: var(--color-primary-500);
+    color: var(--color-text-inverse);
+    font-weight: var(--font-weight-semibold);
     padding: var(--spacing-3) var(--spacing-6);
-    border-radius: var(--button-primary-radius);
-    box-shadow: var(--shadow-md);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-base);
     transition: var(--transition-base);
     border: none;
     cursor: pointer;
     height: var(--button-primary-height);
-    font-size: var(--button-primary-font-size);
+    font-size: var(--font-size-body);
+    transform: translateY(0) scale(1);
   }
 
   .btn-primary:hover {
-    box-shadow: var(--shadow-card-hover);
-    transform: var(--button-primary-transform);
-    background-color: var(--button-primary-bg-hover);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px) scale(1.02);
+    background-color: var(--color-primary-600);
   }
 
   .btn-secondary {
-    background-color: #FFFFFF;
+    background-color: transparent;
     border: 2px solid var(--color-primary-500);
-    color: var(--color-primary-500);
+    color: var(--color-primary-600);
     font-weight: var(--font-weight-semibold);
     padding: var(--spacing-3) var(--spacing-6);
-    border-radius: var(--border-radius-lg);
-    background-color: rgba(255, 107, 47, 0.05);
-    transition: all var(--animation-duration-base) var(--animation-easing-ease-out);
+    border-radius: var(--border-radius-md);
+    transition: var(--transition-base);
     cursor: pointer;
   }
 
   .btn-secondary:hover {
-    transform: scale(1.05);
-    background-color: rgba(255, 107, 47, 0.1);
+    background-color: var(--color-primary-50);
+    transform: translateY(-1px) scale(1.01);
+    border-color: var(--color-primary-600);
+    color: var(--color-primary-700);
   }
 
-  .card-scrapbook {
-    background-color: var(--color-background-page);
+  /* Cartes Premium - Modern Minimalism Design */
+  .card-premium {
+    background-color: var(--color-background-surface);
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-base);
-    transition: all 500ms var(--animation-easing-ease-out);
+    transition: var(--transition-base);
     cursor: pointer;
+    border: 1px solid var(--color-neutral-200);
   }
 
-  .card-scrapbook:hover {
-    box-shadow: var(--shadow-xl);
-    transform: rotate(-1deg) scale(1.05);
+  .card-premium:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px) scale(1.02);
+    border-color: var(--color-primary-200);
   }
 
   /* Gradients standardisés avec variables CSS */
@@ -90,23 +96,15 @@
     color: transparent;
   }
 
-  /* Gradient hero optimisé performance */
-  .hero-gradient {
-    background: linear-gradient(135deg, 
-      var(--color-primary-50) 0%, 
-      var(--color-primary-100) 25%, 
-      var(--color-primary-500) 50%, 
-      var(--color-primary-600) 75%, 
-      var(--color-primary-900) 100%
-    );
+  /* Simplification selon Modern Minimalism Premium - Éviter gradients inutiles */
+  .hero-simple {
+    background: var(--color-background-page);
+    /* Une seule image statique, pas de gradients */
   }
 
-  /* Gradient surface pour cartes */
-  .surface-gradient {
-    background: linear-gradient(145deg, 
-      var(--bg-secondary) 0%, 
-      var(--bg-primary) 100%
-    );
+  /* Indicateur de focus premium - Orange avec transparence selon tokens */
+  .focus-premium {
+    box-shadow: var(--shadow-focus); /* 0 0 0 3px rgba(255, 108, 47, 0.15) */
   }
 
   .badge-glow {

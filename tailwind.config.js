@@ -30,6 +30,14 @@ export default {
           warning: 'var(--color-semantic-warning)',
           info: 'var(--color-semantic-info)',
         },
+        // Couleurs d'arrière-plan système de design
+        background: {
+          page: 'var(--color-background-page)',
+          surface: 'var(--color-background-surface)',
+          elevated: 'var(--color-background-elevated)',
+        },
+        
+        // Couleurs sémantiques pour messages et états
         terracotta: {
           50: '#fff9f7',
           100: '#fef0eb',
@@ -97,22 +105,46 @@ export default {
         },
       },
       fontSize: {
-        xs: ['0.75rem', { lineHeight: '1.5' }],
-        sm: ['0.875rem', { lineHeight: '1.5' }],
-        base: ['1rem', { lineHeight: '1.5' }],
-        lg: ['1.125rem', { lineHeight: '1.5' }],
-        xl: ['1.25rem', { lineHeight: '1.4' }],
+        // Tailles selon spécifications Modern Minimalism Premium
+        'xs': ['0.75rem', { lineHeight: '1.4', letterSpacing: '0.01em' }],     // 12px - Metadata timestamps
+        'sm': ['0.875rem', { lineHeight: '1.5', letterSpacing: '0' }],         // 14px - Labels helper text captions  
+        'body': ['1rem', { lineHeight: '1.5', letterSpacing: '0' }],           // 16px - Texte standard BASE
+        'body-lg': ['1.125rem', { lineHeight: '1.6', letterSpacing: '0' }],    // 18px - Intro paragraphes descriptions
+        'h3': ['1.5rem', { lineHeight: '1.3', letterSpacing: '0' }],           // 24px - Card titles subsections
+        'h2': ['2rem', { lineHeight: '1.3', letterSpacing: '0' }],             // 32px - Section headers dashboard
+        'h1': ['3rem', { lineHeight: '1.2', letterSpacing: '-0.01em' }],       // 48px - Titres pages principales
+        'hero': ['4rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }],     // 64px - Hero homepage uniquement
+        
+        // Tailles Tailwind standard pour compatibilité
+        'xs-tailwind': ['0.75rem', { lineHeight: '1.5' }],
+        'sm-tailwind': ['0.875rem', { lineHeight: '1.5' }],
+        'base-tailwind': ['1rem', { lineHeight: '1.5' }],
+        'lg-tailwind': ['1.125rem', { lineHeight: '1.5' }],
+        'xl': ['1.25rem', { lineHeight: '1.4' }],
         '2xl': ['1.5rem', { lineHeight: '1.3' }],
         '3xl': ['1.875rem', { lineHeight: '1.2' }],
         '4xl': ['2.25rem', { lineHeight: '1.2' }],
         '5xl': ['3rem', { lineHeight: '1.1' }],
+        '6xl': ['3.75rem', { lineHeight: '1' }],
+        '7xl': ['4.5rem', { lineHeight: '1' }],
       },
       fontFamily: {
         display: ['system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
         body: ['system-ui', '-apple-system', 'sans-serif'],
       },
       spacing: {
+        // Système d'espacement 8pt selon design premium
+        '1': '4px',     // 4px - micro
+        '2': '8px',     // 8px - inline icon+text  
+        '3': '12px',    // 12px - petit group
+        '4': '16px',    // 16px - elements proches form fields
+        '6': '24px',    // 24px - groupes reliés gap grids
+        '8': '32px',    // 32px - Card padding MINIMUM
+        '12': '48px',   // 48px - Card padding premium section interne
+        '16': '64px',   // 64px - Espacement ENTRE SECTIONS standard
         '18': '4.5rem',
+        '24': '96px',   // 96px - Hero section padding sections majeures
+        '32': '128px',  // 128px - Espacement dramatique rare
         '88': '22rem',
         '128': '32rem',
       },
@@ -155,7 +187,27 @@ export default {
           '100%': { backgroundPosition: '1000px 0' },
         },
       },
+      borderRadius: {
+        // Modernité douce selon design premium
+        'md': '12px',    // Boutons inputs STANDARD
+        'lg': '16px',    // Cards
+        'xl': '24px',    // Modals drawers
+        'full': '9999px', // Avatars pills circulaires
+        
+        // Standard Tailwind pour compatibilité
+        'none': '0px',
+        'sm': '4px',
+        'base': '6px',
+        '2xl': '16px',
+        '3xl': '24px',
+      },
       boxShadow: {
+        // Ombres selon spécifications Modern Minimalism Premium
+        'sm': '0 1px 2px rgba(0, 0, 0, 0.06)',
+        'base': '0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06)',
+        'md': '0 4px 6px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.06)',
+        'lg': '0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05)',
+        'focus': '0 0 0 3px rgba(255, 108, 47, 0.15)',
         'glow': '0 0 15px rgba(255, 86, 51, 0.5)',
         'glow-lg': '0 0 30px rgba(255, 86, 51, 0.6)',
         'card': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
